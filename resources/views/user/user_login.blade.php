@@ -43,7 +43,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                {{--<div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="text-center">
@@ -51,7 +51,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--}}
                             </form>
                             <form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
                                 <div class="form-group">
@@ -65,6 +65,21 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="full_name" id="inputFullname" tabindex="1" class="form-control" placeholder="Full Name" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="address" id="inputAddress" tabindex="1" class="form-control" placeholder="Addresss" value="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="full_name" id="inputFullname" tabindex="1" class="form-control" placeholder="Full Name" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="date">Date</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="date" name="DOB" placeholder="DOB(YYYY/MM/DD)" type="text" readonly/>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
@@ -81,5 +96,19 @@
         </div>
     </div>
 </div>
-
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="DOB"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd/mm/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
 

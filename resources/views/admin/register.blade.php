@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label class="control-label" for="date">Date</label>
                     <div class="input-group">
-                        <input class="form-control" id="date" name="DOB" placeholder="YYYY/MM/DD" type="text"/>
+                        <input class="form-control" id="date" name="DOB" placeholder="YYYY/MM/DD" type="text" readonly/>
                     </div>
                 </div>
                 <div class="form-group" style="text-align: left">
