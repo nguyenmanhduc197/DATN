@@ -17,23 +17,10 @@ class UsersTableSeeder extends Seeder
 
 
             [
-                'username'=>'nguyenmanhduc197',
-                'password'=>hash::make('duc1234'),
-                'full_name'=>'Nguyen Manh Duc',
-                'gender'=>1,
-                'address'=>'Hanoi',
-                'email'=>'nguyenmanhduc197@gmail.com',
-                'DOB'=>'1997-07-19',
-                'phone'=>'0392699990',
-                'role'=>1,
-                'status'=>1
-            ],
-
-            [
                 'username'=>'admin01',
                 'password'=>hash::make('admin01'),
                 'full_name'=>'admin',
-                'gender'=>1,
+                'gender'=>2,
                 'address'=>'Hanoi',
                 'email'=>'admin01@gmail.com',
                 'DOB'=>'1997-07-19',

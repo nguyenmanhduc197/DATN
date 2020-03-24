@@ -87,4 +87,11 @@ Route::get('/blade',function () {
     return view('layouts.new-master');
 });
 
-Route::get('/user_login', 'UserLoginController@login');
+Route::get('/user/login', 'UserLoginController@login');
+Route::post('/login/user', 'UserLoginController@postLogin');
+Route::get('/user/logout', 'UserLoginController@logout');
+Route::post('/user/register-process', 'UserLoginController@createCustomerAccount');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

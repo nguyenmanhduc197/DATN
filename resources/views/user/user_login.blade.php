@@ -25,7 +25,20 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                            @if($errors->any())
+                                <div class="alert alert-danger">
+                                    @foreach($errors->all() as $err)
+                                        <li>{{$err}}</li>
+                                    @endforeach
+                                </div>
+                            @endif
+                            @if(session('message'))
+                                <div class="alert alert-success">
+                                    {{session('message')}}
+                                </div>
+                            @endif
+                            <form id="login-form" action="/login/user" method="post" role="form" style="display: block;">
+                                @csrf()
                                 <div class="form-group">
                                     <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                                 </div>
@@ -53,7 +66,8 @@
                                     </div>
                                 </div>--}}
                             </form>
-                            <form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                            <form id="register-form" action="/user/register-process" method="post" role="form" style="display: none;">
+                                @csrf()
                                 <div class="form-group">
                                     <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                                 </div>
@@ -73,13 +87,25 @@
                                     <input type="text" name="address" id="inputAddress" tabindex="1" class="form-control" placeholder="Addresss" value="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="full_name" id="inputFullname" tabindex="1" class="form-control" placeholder="Full Name" value="">
+                                    <div class="input-group">
+                                        <input class="form-control" id="date" name="DOB" placeholder="Date of birth" type="text" readonly/>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="text-align: left">
+                                    <label>Gender</label>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="gender" id="1" value="option1" checked=""> Female
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="gender" id="2" value="option2"> Male
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" for="date">Date</label>
-                                    <div class="input-group">
-                                        <input class="form-control" id="date" name="DOB" placeholder="DOB(YYYY/MM/DD)" type="text" readonly/>
-                                    </div>
+                                    <input type="text" name="phone" id="inputPhone" tabindex="1" class="form-control" placeholder="Phone Number" value="">
                                 </div>
                                 <div class="form-group">
                                     <div class="row">

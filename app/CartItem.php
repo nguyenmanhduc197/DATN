@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ngo Ngoc Na
- * Date: 8/26/2018
- * Time: 6:47 PM
- */
 
 namespace App;
 

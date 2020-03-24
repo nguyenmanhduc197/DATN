@@ -98,7 +98,7 @@
 
                 <!-- Header Icon -->
                 <div class="header-icons">
-                    <a href="/user_login" class="header-wrapicon1 dis-block">
+                    <a href="/user/login" class="header-wrapicon1 dis-block">
                         <img src="{{asset('img/icon-header-01.png')}}" class="header-icon1" alt="ICON">
                     </a>
 
