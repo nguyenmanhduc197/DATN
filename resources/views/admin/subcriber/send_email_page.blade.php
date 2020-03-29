@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Email người gửi</label>
                                     <input class="form-control" type="text" name="sender"
-                                           placeholder="VD: farfetch@gmail.com" value="farfetch@gmail.com">
+                                           placeholder="VD: gymerstore@gmail.com" value="gymerstore@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -97,10 +97,10 @@
                     arrayId.push($(this).attr('id'));
                 });
                 if (arrayId.length > 0) {
-                    mail_content += '<img src="https://i.imgur.com/1GiFNsE.png" style="max-width: 70%">';
+                    mail_content += '<img src="https://i.imgur.com/21NRuWS.png" style="max-width: 70%">';
                     mail_content +=
                         '<h4>Cảm ơn bạn đã quan tâm đến cửa hàng của chúng tôi, </h4>\n' +
-                        '<p>Farfetch đang có những sản phẩm ' + '<span class="text-danger">HOT ' + '<i class="fa fa-fire"></i>' + '</span>' + 'dành cho mùa thu này</p>' +
+                        '<p>Gymer Store đang có những sản phẩm ' + '<span class="text-danger">HOT ' + '<i class="fa fa-fire"></i>' + '</span>' + 'dành cho mùa hè này</p>' +
                         '<p>Bạn hãy click vào đường dẫn của những sản phẩm mới dưới đây để xem thông tin chi tiết hơn nhé !!</p>' +
                         '<ul>';
                     for (var i = 0; i < arrayName.length; i++) {
@@ -108,7 +108,7 @@
                         mail_content += '<li>' + arrayName[i] + ' : ' + 'Click vào ' + '<a href="' + link + '"> ' + 'đây' + '</a> để xem chi tiết sản phẩm</li>';
                     }
                     mail_content += '</ul>'
-                    mail_content += '<img src="https://i.ytimg.com/vi/jIAM84-DjMI/maxresdefault.jpg" style="max-width: 80%">'
+                    mail_content += '<img src="https://i.imgur.com/AIbLSS6.jpg" style="max-width: 80%">'
                 }
 
                 $('.nhan-mail').html(mail_content);

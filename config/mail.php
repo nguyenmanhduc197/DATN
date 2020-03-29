@@ -4,7 +4,7 @@ return [
     "driver" => "smtp",
     "host" => "smtp.gmail.com",
     "port" => 587,
-    "username" => "farfetchmensfashion@gmail.com",
-    "password" => "fwaxufmlshyrabrm",
+    "username" => "gymerstore@gmail.com",
+    "password" => "duc1971997",
     "encryption" => "tls"
 ];

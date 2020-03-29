@@ -12,7 +12,7 @@
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
     <link rel="stylesheet" href="{{asset('font/font-awesome/css/font-awesome.min.css')}}"/>
     <title>@yield('page-title')</title>
-    <link rel="icon" type="image/png" href="{{asset('img/favicon.ico')}}"/>
+    <link rel="icon" type="image/png" href="{{asset('img/GS_logo.jpg')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/themify-icons.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/icon-font.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/style.css')}}">
@@ -40,7 +40,7 @@
         <div class="container-menu-header">
             <div class="topbar">
                 <div class="topbar-social">
-                    <a href="https://www.facebook.com/wheystore.vn/"
+                    <a href="https://www.facebook.com/GS-GYM-330250914034839/"
                        class="topbar-social-item fa fa-facebook"></a>
                     <a href="https://www.instagram.com/wheystore.vn/" class="topbar-social-item fa fa-instagram"></a>
                     <a href="https://www.youtube.com/channel/UCiAZ1_f4d_oWQ1BsHLkBVZg"
@@ -53,7 +53,7 @@
 
                 <div class="topbar-child2">
 					<span class="topbar-email">
-						farfetch@gmail.com
+						gymerstore@gmail.com
 					</span>
                 </div>
             </div>
@@ -61,7 +61,7 @@
             <div class="wrap_header">
                 <!-- Logo -->
                 <a href="/" class="logo">
-                    <img src="{{asset('img/farfetch-logo.png')}}" style="max-height: 60px;" alt="IMG-LOGO">
+                    <img src="{{asset('img/GS_logo.jpg')}}" style="max-height: 60px;" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu -->
@@ -116,7 +116,7 @@
                                     @foreach(\App\ShoppingCart::getCart()->items as $item)
                                         <li class="header-cart-item">
                                             <div class="header-cart-item-img">
-                                                <img src="<?php echo explode("&", $item->product->images, -1)[0];?>"
+                                                <img src="{{$item->product->images}}"
                                                      alt="IMG">
                                             </div>
                                             <div class="header-cart-item-txt">
@@ -175,10 +175,10 @@
                     </p>
 
                     <div class="flex-m p-t-30">
-                        <a href="https://www.facebook.com/farfetch.asiapac/?brand_redir=88573992939"
+                        <a href="https://www.facebook.com/GS-GYM-330250914034839/"
                            class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/farfetch/" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-                        <a href="https://www.youtube.com/user/farfetchdotcom"
+                        <a href="https://www.instagram.com/wheystore.vn/" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCiAZ1_f4d_oWQ1BsHLkBVZg"
                            class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
                     </div>
                 </div>

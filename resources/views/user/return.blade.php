@@ -18,17 +18,6 @@
                     <p>Các mặt hàng trả lại phải chưa được sử dụng và không bị hư hại, bao gồm tất cả các thẻ
                         đính kèm và bao bì gốc.</p>
 
-                    <p>Giày dép và các phụ kiện trả lại phải để bên trong túi chắn bụi và các hộp đựng thương hiệu gốc
-                        để vận chuyển.</p>
-
-                    <p>Khi thử giày dép, hãy cẩn thận không đánh dấu đế hoặc làm hỏng hộp đựng giày.</p>
-
-                    <p>Hàng dệt kim, đồ lót và đồ bơi phải được trả lại bằng niêm phong vệ sinh kèm theo và trong bao bì
-                        sản phẩm chưa mở và không bị hư hại, nếu có.</p>
-
-                    <p>Đồ trang sức phải được trả lại trong đúg tình trạng ban đầu, bao gồm tất cả các bao bì có
-                        thương hiệu và các tài liệu được cung cấp kèm theo.</p>
-
                     <p>Hãy cẩn thận khi thử hàng và trả lại chúng theo đúng điều kiện ban đầu bạn nhận.
                         Bất kỳ lí do nào không đáp ứng chính sách của chúng tôi sẽ không được chấp nhận.</p>
 
@@ -37,17 +26,17 @@
                     <p>Chúng tôi rất vui khi cung cấp dịch vụ trả lại miễn phí cho tất cả khách hàng đối với bất
                         kỳ giao dịch mua nào đáp ứng Chính sách trả hàng của chúng tôi.</p>
 
-                    <p>Hàng trả lại của bạn phải đến cửa hàng đối tác Farfetch hoặc từ thương hiệu nó đã được đặt hàng
+                    <p>Hàng trả lại của bạn phải đến cửa hàng đối tác Gymer Store hoặc từ thương hiệu nó đã được đặt hàng
                         không muộn hơn 14 ngày sau ngày giao hàng của bạn. Chúng tôi khuyên bạn nên đặt dịch vụ nhận hàng
                         khứ hồi trong vòng 7 ngày kể từ ngày giao hàng của bạn để đảm bảo rằng nó đến địa điểm của đối tác
-                        Farfetch có liên quan trong vòng 14 ngày.</p>
+                        Gymer Store có liên quan trong vòng 14 ngày.</p>
 
                     <p>Chuẩn bị hộp đồ của bạn với các tài liệu đính kèm theo đơn đặt hàng của bạn</p>
 
-                    <p>Đặt (các) món hàng với tất cả bao bì gốc bên trong hộp Farfetch và để nó mở cho người chuyển phát
+                    <p>Đặt (các) món hàng với tất cả bao bì gốc bên trong hộp Gymer Store và để nó mở cho người chuyển phát
                         nhanh để kiểm tra nội dung.</p>
 
-                    <p>Đính kèm nhãn trả lại (vận đơn gửi hàng) và một tờ khai trả lại có chữ ký ở bên ngoài hộp Farfetch
+                    <p>Đính kèm nhãn trả lại (vận đơn gửi hàng) và một tờ khai trả lại có chữ ký ở bên ngoài hộp Gymer Store
                         của bạn và trao cho nhà phát hành các bản sao dự phòng của cả hai tài liệu.</p>
 
 
@@ -73,7 +62,7 @@
 
                     <b>Các đồ bị lỗi</b>
 
-                    <p>CHúng tôi luôn mong muốn khách hàng nhận được những sản phẩm tuyệt vời trong tình trạng tuyệt vời.
+                    <p>Chúng tôi luôn mong muốn khách hàng nhận được những sản phẩm tuyệt vời trong tình trạng tuyệt vời.
                         Nếu bạn nhận được một món hàng trong tình trạng thiếu sót hoặc hư hỏng, hoặc nếu nó không hoàn
                         toàn giống với mô tả trên trang web, vui lòng thông báo cho Dịch vụ Khách hàng càng sớm càng tốt.
                         Nếu có thể chúng tôi sẽ gửi đến bạn sản phẩm thay thế hoặc hoàn tiền đầy đủ cho các sản phẩm lỗi.</p>

@@ -88,7 +88,7 @@ Route::get('/blade',function () {
 });
 
 Route::get('/user/login', 'UserLoginController@login');
-Route::post('/login/user', 'UserLoginController@postLogin');
+Route::post('/user/login', 'UserLoginController@postLogin');
 Route::get('/user/logout', 'UserLoginController@logout');
 Route::post('/user/register-process', 'UserLoginController@createCustomerAccount');
 

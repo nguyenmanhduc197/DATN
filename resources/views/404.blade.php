@@ -13,7 +13,7 @@
 </head>
 <body>
 <section id="not-found">
-    <div id="title">Farfetch &bull; 404 Error Page</div>
+    <div id="title">GymerStore &bull; 404 Error Page</div>
     <div class="circles">
         <p>404<br>
             <small>PAGE NOT FOUND</small>

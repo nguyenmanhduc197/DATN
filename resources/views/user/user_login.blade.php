@@ -37,7 +37,7 @@
                                     {{session('message')}}
                                 </div>
                             @endif
-                            <form id="login-form" action="/login/user" method="post" role="form" style="display: block;">
+                            <form id="login-form" action="/user/login" method="post" role="form" style="display: block;">
                                 @csrf()
                                 <div class="form-group">
                                     <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">

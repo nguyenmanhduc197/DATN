@@ -15,58 +15,64 @@ class BrandsTableSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('brands')->truncate();
         \Illuminate\Support\Facades\DB::table('brands')->insert([
            [
-               'name' => 'Balmain',
-               'description' => 'Hãng thời trang cao cấp của Pháp',
-               'country' => 'Pháp',
-               'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534344051/Brand%20Img/balmain_logo.png'
+               'name' => 'Optimum Nutrition',
+               'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+               'country' => 'Mỹ',
+               'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585116625/Optimum_20Nutrition_zwymjr.png'
            ],
            [
-               'name' => 'Burberry',
-               'description' => 'Hãng thời trang cao cấp của Anh',
-               'country' => 'Anh',
-               'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534344051/Brand%20Img/burberry_logo.png'
+               'name' => 'Nutrabolics',
+               'description' => 'Hãng thực phẩm bổ sung cao cấp của Canada',
+               'country' => 'Canada',
+               'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585116743/nutrabolicscom_qxhqkp.jpg'
            ],
            [
-               'name' => 'Gucci',
-               'description' => 'Hãng thời trang cao cấp của Ý',
-               'country' => 'Ý',
-               'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534344052/Brand%20Img/gucci_logo.png'
+               'name' => 'Labrada',
+               'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+               'country' => 'Mỹ',
+               'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585116932/747f29fbcc5b5252dab8a22d5867b7ea.w400.h400_o79orw.jpg'
            ],
            [
-               'name' => 'Lanvin',
-               'description' => 'Hãng thời trang cao cấp của Pháp',
-               'country' => 'Pháp',
-               'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534344053/Brand%20Img/lanvin_logo.png'
+               'name' => 'Dymatize',
+               'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+               'country' => 'Mỹ',
+               'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117077/Dymatize_Logo_ckohol.jpg'
            ],
             [
-                'name' => 'Fendi',
-                'description' => 'Hãng thời trang cao cấp của Ý',
-                'country' => 'Ý',
-                'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534345608/Brand%20Img/fendi_logo.png'
+                'name' => 'MuclePharm',
+                'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+                'country' => 'Mỹ',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117208/AGF-l78sXDnBuzNtgBByPtlQ_A8E2Z3vPiRtEYTm_s900-c-k-c0xffffffff-no-rj-mo_cmqxft.jpg'
             ],
             [
-                'name' => 'Valentino',
-                'description' => 'Hãng thời trang cao cấp của Ý',
-                'country' => 'Ý',
-                'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534345610/Brand%20Img/valentation_logo.png'
+                'name' => 'Mutant',
+                'description' => 'Hãng thực phẩm bổ sung cao cấp của Canada',
+                'country' => 'Canada',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117345/dietary-supplement-bodybuilding-supplement-mutant-muscle-bodybuilder-logo-png-clip-art_nzhosx.png'
             ],
             [
-                'name' => 'Kenzo',
-                'description' => 'Hãng thời trang cao cấp của Pháp',
-                'country' => 'Pháp',
-                'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534345608/Brand%20Img/kenzo_logo.png'
+                'name' => 'MyProtein',
+                'description' => 'Hãng thực phẩm bổ sung cao cấp của Anh',
+                'country' => 'Anh',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117430/d3c59aa6-fa5a-498a-bb46-dac84e3c19ee_bn6p1y.jpg'
             ],
             [
-                'name' => 'Balenciaga',
-                'description' => 'Hãng thời trang cao cấp của Tây Ban Nha',
-                'country' => 'Tây Ban Nha',
-                'logo' => 'https://res.cloudinary.com/dncvywdxi/image/upload/v1534345611/Brand%20Img/balenciaga_logo.png'
+                'name' => 'Ultimate Nutrition',
+                'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+                'country' => 'Mỹ',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117605/ultimate_nutririon_ne3rzz.png'
             ],
             [
-                'name' => 'Saint Laurent',
-                'description' => 'Hãng thời trang cao cấp của Pháp',
-                'country' => 'Pháp',
-                'logo' => 'https://res.cloudinary.com/dyyybxgae/image/upload/v1534695307/Fashion/logo-Yves-Saint-Laurent.jpg'
+                'name' => 'BPI Sport',
+                'description' => 'Hãng thực phẩm bổ sung cao cấp của Mỹ',
+                'country' => 'Mỹ',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117649/xkD30UFU1568798005_bngmxv.jpg'
+            ],
+            [
+                'name' => 'Others',
+                'description' => 'Các hãng khác',
+                'country' => 'somewhere',
+                'logo' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585117810/country-flags_icvb60.jpg'
             ],
         ]);
     }

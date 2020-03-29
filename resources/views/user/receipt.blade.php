@@ -1,7 +1,7 @@
 @extends('layouts.user-master-layout',['currentPage' => 'Products'])
 @section('page-title','Product')
 @section('content')
-    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/0b23a3c7c111f23618f91f722fe02a09.png')}}" style="max-width: 30%"></div>
+    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/logoGymerStore.jpg')}}" style="max-width: 30%"></div>
     <div class="checkout-wrap">
         <ul class="checkout-bar">
             <li class="visited first">
@@ -13,15 +13,15 @@
         </ul>
     </div>
 <div class="invoice-box" style="margin-top: 180px; margin-bottom: 30px">
-    <img src="{{asset('img/0b23a3c7c111f23618f91f722fe02a09.png')}}" style="max-width: 30%">
+    <img src="{{asset('img/logoGymerStore.jpg')}}" style="max-width: 30%">
     <hr>
     <table cellpadding="0" cellspacing="0">
         <tr class="top">
             <td colspan="2">
                 <table>
                     <tr>
-                        <p>Cảm ơn quý khách đã đặt hàng tại Farfetch. Đơn hàng #{{$order -> id}} của quý khách đã được tiếp nhận và đang trong quá trình xử lý.
-                            Farfetch sẽ thông báo đến quý khách ngay khi hàng chuẩn bị được giao.</p>
+                        <p>Cảm ơn quý khách đã đặt hàng tại Gymer Store. Đơn hàng #{{$order -> id}} của quý khách đã được tiếp nhận và đang trong quá trình xử lý.
+                            Gymer Store sẽ thông báo đến quý khách ngay khi hàng chuẩn bị được giao.</p>
                         <br>
                         <h4>Thông tin đơn hàng #{{$order -> id}} ({{$order -> created_at}})</h4>
                         <hr>

@@ -42,9 +42,9 @@
         <!-- Logo -->
         <a href="/admin" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>F</b>FF</span>
+            <span class="logo-mini"><b>GS</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Far</b>Fetch</span>
+            <span class="logo-lg"><b>Gymer Store</b>Fetch</span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -69,7 +69,7 @@
 
                                 <p>
                                     Admin - Web Administration
-                                    <small>Là thành viên từ Aug. 2018</small>
+                                    <small>Là thành viên từ Mar. 2020</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->

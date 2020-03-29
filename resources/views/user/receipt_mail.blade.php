@@ -118,15 +118,15 @@
 
 <body>
 <div class="invoice-box" style="margin-top: 180px; margin-bottom: 30px">
-    <img src="https://i.imgur.com/1GiFNsE.png" style="max-width: 30%">
+    <img src="https://i.imgur.com/21NRuWS.png" style="max-width: 30%">
     <hr>
     <table cellpadding="0" cellspacing="0">
         <tr class="top">
             <td colspan="2">
                 <table>
                     <tr>
-                        <p>Cảm ơn quý khách đã đặt hàng tại Farfetch. Đơn hàng #{{$order -> id}} của quý khách đã được tiếp nhận và đang trong quá trình xử lý.
-                            Farfetch sẽ thông báo đến quý khách ngay khi hàng chuẩn bị được giao.</p>
+                        <p>Cảm ơn quý khách đã đặt hàng tại GymerStore. Đơn hàng #{{$order -> id}} của quý khách đã được tiếp nhận và đang trong quá trình xử lý.
+                            GymerStore sẽ thông báo đến quý khách ngay khi hàng chuẩn bị được giao.</p>
                         <br>
                         <h4>Thông tin đơn hàng #{{$order -> id}} ({{$order -> created_at}})</h4>
                         <hr>

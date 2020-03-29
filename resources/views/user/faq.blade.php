@@ -15,7 +15,7 @@
                     <b>Tôi có cần một tài khoản để đặt hàng không?</b>
 
                     <p>Địa chỉ email là tất cả những gì bạn cần để bắt đầu quá trình đặt hàng. Chúng tôi khuyên bạn nên
-                        đăng ký tài khoản Farfetch để bạn có thể bắt đầu thêm các phần yêu thích vào danh sách yêu thích
+                        đăng ký tài khoản để bạn có thể bắt đầu thêm các phần yêu thích vào danh sách yêu thích
                         và
                         dễ dàng đặt hàng.</p>
 
@@ -24,7 +24,7 @@
                     <p>Chỉ cần nhấp vào liên kết 'Quên mật khẩu của bạn?' Trên trang Đăng nhập của chúng tôi và nhập địa
                         chỉ email của bạn. Sau đó, bạn sẽ nhận được email để đặt lại mật khẩu của mình.</p>
 
-                    <b>Làm cách nào để nhận được cập nhật email Farfetch?</b>
+                    <b>Làm cách nào để nhận được cập nhật email Gymer Store?</b>
 
                     <p>Được thông báo về những khách mới, xu hướng và chương trình khuyến mãi độc quyền bằng cách nhập
                         địa
@@ -34,7 +34,7 @@
 
                     <b>Làm cách nào để đặt hàng trên trang web của bạn?</b>
 
-                    <p>Đặt hàng dễ dàng tại Farfetch. Dưới đây là cách thực hiện:</p>
+                    <p>Đặt hàng dễ dàng tại Gymer Store. Dưới đây là cách thực hiện:</p>
 
                     <p>Chọn một danh mục hoặc nhà thiết kế từ trình đơn điều hướng trên cùng hoặc tìm kiếm để khám phá một
                         phong cách hoặc xu hướng cụ thể.</p>
@@ -72,23 +72,23 @@
             </div>
             <div class="wrap-dropdown-content bo7 p-t-15 p-b-14">
                 <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
-                    Giá tiền và thanh toán của Farfetch
+                    Giá tiền và thanh toán của Gymer Store
                     <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
                     <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
                 </h5>
                 <div class="dropdown-content dis-none p-t-15 p-b-23">
                     <div class="s-text8">
-                        <b>Tại sao giá thành ở Farfetch lại đặc biệt?</b>
+                        <b>Tại sao giá thành ở Gymer Store lại đặc biệt?</b>
 
-                        <p>Tại Farfetch, bạn sẽ được mua các sản phẩm từ các thương hiệu và đối tác cao cấp của chúng tôi trên
+                        <p>Tại Gymer Store, bạn sẽ được mua các sản phẩm từ các thương hiệu và đối tác cao cấp của chúng tôi trên
                         toàn cầu, được đội ngũ của chúng tôi giám sát và tuyển chọn một cách chuyên nghiệp. Giá được xác
-                        định bởi mỗi đối tác Farfetch, do đó giá của cùng một mặt hàng có thể khác nhau tùy thuộc vào vị
+                        định bởi mỗi đối tác Gymer Store, do đó giá của cùng một mặt hàng có thể khác nhau tùy thuộc vào vị
                         trí của bạn và nơi bạn đặt mua một mặt hàng.
                         </p>
 
                         <b>Khi nào thẻ của tôi bị tính phí?</b>
 
-                        <p>Nếu bạn thanh toán bằng thẻ ghi nợ hoặc PayPal, Farfetch sẽ thanh toán tại thời điểm đặt hàng
+                        <p>Nếu bạn thanh toán bằng thẻ ghi nợ hoặc PayPal, Gymer Store sẽ thanh toán tại thời điểm đặt hàng
                             của bạn trên trang web của chúng tôi. Nếu bạn thanh toán bằng thẻ tín dụng, thanh toán đầy đủ
                             thường được thực hiện khi đơn đặt hàng của bạn đã sẵn sàng để giao hàng, mặc dù ngân hàng
                             hoặc nhà phát hành thẻ của bạn có thể đặt trước số tiền đặt hàng trong tài khoản của bạn.

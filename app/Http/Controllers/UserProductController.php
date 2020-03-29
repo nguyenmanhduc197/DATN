@@ -29,7 +29,7 @@ class UserProductController
             ->orderBy(DB::raw("`price` - (`price` * `discount` / 100)"), 'asc')
             -> get();
         if(Input::has('bigSale')){
-            $obj = Product::where('discount','>=', 30)
+            $obj = Product::where('discount','>=', 5)
                 ->orderBy('created_at', 'desc')
                 ->orderBy('discount', 'desc')
                 ->orderBy(DB::raw("`price` - (`price` * `discount` / 100)"), 'asc')
@@ -79,7 +79,7 @@ class UserProductController
         }
         else if(Input::has('bigSale') && Input::get('bigSale') == 1 && Input::has('sort') && Input::has('value1') && Input::has('value2')){
             if(Input::get('sort') == 'none'){
-                $obj = Product::where('discount','>=', 30)
+                $obj = Product::where('discount','>=', 5)
                     ->whereBetween(DB::raw("`price` - (`price` * `discount` / 100)") , [Input::get('value1'), Input::get('value2')])
                     ->orderBy('created_at', 'desc')
                     ->orderBy('discount', 'desc')
@@ -87,7 +87,7 @@ class UserProductController
                     -> get();
             }
             else{
-                $obj = Product::where('discount','>=', 30)
+                $obj = Product::where('discount','>=', 5)
                     ->whereBetween(DB::raw("`price` - (`price` * `discount` / 100)") , [Input::get('value1'), Input::get('value2')])
                     ->orderBy(DB::raw("`price` - (`price` * `discount` / 100)"), Input::get('sort'))
                     ->orderBy('created_at', 'desc')

@@ -108,7 +108,7 @@
                                                     echo '<span class="block2-labelsale text-danger">' . '-' . $item -> discount . '%' . '</span>';
                                                 }
                                             ?>
-                                        <img src="<?php echo explode("&",$item -> images,-1)[0];?>">
+                                        <img src="{{$item->images}}">
 
                                         <div class="block2-overlay trans-0-4">
                                             {{--<a href="/them-gio-hang?id={{$product->id}}&quantity=1">--}}

@@ -1,5 +1,5 @@
 @extends('layouts.user-master-layout',['currentPage' => 'homepage'])
-@section('page-title','Mens Fashion - Designer Clothing 2018 - Farfetch')
+@section('page-title','Gymer Store')
 @section('content')
     <section class="slide1">
         <div class="wrap-slick1">
@@ -9,7 +9,8 @@
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                             <!-- Button -->
-                            <a href="/product" class="flex-c-m size2 bo-rad-23 s-text2 text-white bgblack hov1 trans-0-4">
+                            <a href="/product"
+                               class="flex-c-m size2 bo-rad-23 s-text2 text-white bgblack hov1 trans-0-4">
                                 Mua ngay
                             </a>
                         </div>
@@ -54,7 +55,8 @@
                         <img src="{{$whey_protein->image}}" alt="IMG-BENNER">
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$whey_protein->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$whey_protein->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 Whey Protein
                             </a>
                         </div>
@@ -65,7 +67,8 @@
                         <img src="{{$sua_tang_can->image}}" alt="IMG-BENNER">
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$sua_tang_can->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$sua_tang_can->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 Sữa tăng cân
                             </a>
                         </div>
@@ -79,7 +82,8 @@
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$bcaa->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$bcaa->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 BCAA
                             </a>
                         </div>
@@ -91,7 +95,8 @@
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$phu_kien->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$phu_kien->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 Phụ kiện
                             </a>
                         </div>
@@ -105,7 +110,8 @@
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$vitamin->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$vitamin->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 Vitamin, khoáng
                             </a>
                         </div>
@@ -117,7 +123,8 @@
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
-                            <a href="{{'/product'.'?categoryId='.$pre_workout->id}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
+                            <a href="{{'/product'.'?categoryId='.$pre_workout->id}}"
+                               class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4 bg-dark text-white">
                                 Pre-workout
                             </a>
                         </div>
@@ -145,30 +152,33 @@
                             <div class="block2">
                                 <div class="block2-img wrap-pic-w of-hidden pos-relative" style="text-align: center">
                                     <?php
-                                    if($item -> BlockStyle == 'both'){
-                                        echo '<span class="block2-labelsale text-danger">'. '-' . $item -> discount . '%' . '</span>' . '<span class="block2-labelnew"></span>';
-                                    }
-                                    else if($item -> BlockStyle == 'new'){
+                                    if ($item->BlockStyle == 'both') {
+                                        echo '<span class="block2-labelsale text-danger">' . '-' . $item->discount . '%' . '</span>' . '<span class="block2-labelnew"></span>';
+                                    } else if ($item->BlockStyle == 'new') {
                                         echo '<span class="block2-labelnew"></span>';
-                                    }
-                                    else if($item -> BlockStyle == 'sale'){
-                                        echo '<span class="block2-labelsale">' . '-' . $item -> discount . '%' . '</span>';
+                                    } else if ($item->BlockStyle == 'sale') {
+                                        echo '<span class="block2-labelsale">' . '-' . $item->discount . '%' . '</span>';
                                     }
                                     ?>
-                                    <img src="<?php echo explode("&", $item->images, -1)[0];?>" alt="IMG-PRODUCT">
-                                    <div class="block2-overlay trans-0-4">
-                                        <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                            <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                            <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                        </a>
+                                    <a href="/product/{{$item->id}}"><img
+                                                src="{{$item->images}}"
+                                                alt="IMG-PRODUCT">
+                                        <div class="block2-overlay trans-0-4">
+                                            <a href="/product/{{$item->id}}"
+                                               class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                                <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                                <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                            </a>
 
-                                        <div class="block2-btn-addcart w-size1 trans-0-4" id="add-cart-{{$item->id}}">
-                                            <!-- Button -->
-                                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                                Thêm vào giỏ hàng
-                                            </button>
+                                            <div class="block2-btn-addcart w-size1 trans-0-4"
+                                                 id="add-cart-{{$item->id}}">
+                                                <!-- Button -->
+                                                <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                    Thêm vào giỏ hàng
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
 
                                 <div class="block2-txt p-t-20" style="text-align: center">

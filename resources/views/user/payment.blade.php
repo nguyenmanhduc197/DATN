@@ -4,7 +4,7 @@
     <div class="container-fluid m-b-30" style="width: 70%">
         <div class="row row-eq-height">
             <div class="col-8">
-                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/0b23a3c7c111f23618f91f722fe02a09.png')}}" style="max-width: 30%"></div>
+                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/logoGymerStore.jpg')}}" style="max-width: 30%"></div>
                 <div class="checkout-wrap">
                     <ul class="checkout-bar">
                         <li class="visited first">
@@ -91,7 +91,7 @@
                         <tr class="table-row" id="item-{{$item->product->id}}">
                             <td class="column-1">
                                 <div class="cart-img-product b-rad-4 o-f-hidden">
-                                    <img src="<?php echo explode("&",$item->product->images,-1)[0];?>" alt="{{$item->product->name}}">
+                                    <img src="{{$item->product->images}}" alt="{{$item->product->name}}">
                                 </div>
                             </td>
                             <td class="column-2 checkout-name">{{$item->product->name}}</td>

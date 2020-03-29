@@ -15,9 +15,9 @@ class EmailController extends Controller
 //    {
 //        $data = array('title' => 'Xin chao vietnam', 'content' => 'Day la noi dung');
 //        Mail::send('admin.email.send_reicept', $data, function ($message) {
-//            $message->to('namngocngo22@gmail.com', 'ngo ngoc nam')
+//            $message->to('nguyenmanhduc197@gmail.com', 'ngmanhduc')
 //                ->subject('Laravel HTML Testing Mail');
-//            $message->from('farfetchmensfashion@gmail.com', 'FarFetch Mens Fashion');
+//            $message->from('gymerstore@gmail.com', 'Gymer Store');
 //        });
 //        return 'okie';
 //    }
@@ -28,9 +28,9 @@ class EmailController extends Controller
         $mail_content = $request->input('mail_content');
         $data = array('title' => 'Quảng cáo', 'content' => $mail_content);
         Mail::send('admin.email.send_reicept', $data, function ($message) use ($email) {
-            $message->to($email, 'FarFetchs Subscribers')->subject
-            ('Quảng cáo sản phảm mới FarFetch Mens Fashion');
-            $message->from('farfetchmensfashion@gmail.com', 'FarFetch');
+            $message->to($email, 'GymerStore Subscribers')->subject
+            ('Quảng cáo sản phảm mới Gymer Store');
+            $message->from('gymerstore@gmail.com', 'GymerStore');
         });
         return response()->json(['msg', 'DONE'], 200);
     }
