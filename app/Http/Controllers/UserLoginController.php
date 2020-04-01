@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Account;
+use App\Category;
 use App\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Symfony\Component\HttpKernel\Profiler\Profile;
 
 class UserLoginController extends Controller
 {
@@ -32,7 +34,7 @@ class UserLoginController extends Controller
             'password.max' => 'Mật khẩu từ 6-20 ký tự'
         ]);
         if (Auth::guard('customer')->attempt(['username' => $request->username, 'password' => $request->password])) {
-            return redirect('/');
+            return redirect('/userprofile');
         } else {
             return redirect()->back()->with('message', 'Tên đăng nhập hoặc mật khẩu không đúng ');
         }
@@ -41,7 +43,7 @@ class UserLoginController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/user_login');
+        return redirect('/');
     }
 
     public function registerCustomer(Request $request)
@@ -121,6 +123,41 @@ class UserLoginController extends Controller
         if ($obj != null) {
             return true;
         } else return false;
+    }
+
+    public function showUserProfile()
+    {
+        if (Auth::guard('customer')-> check()) {
+            $obj_category = Category::where('status',1)->get();
+            return view('user.user_profile')->with('obj_category', $obj_category)
+                ->with('logged_in', true);
+        } else return redirect('/user/login')->with('message', 'Bạn phải đăng nhập để có thể vào profile');
+    }
+
+    public function store(Request $request){
+        $email= Auth::guard('customer')->user()->email;
+        Customer::where('email',$email)->update([
+            'full_name'=> request ('full_name'),
+            'address'=> request ('address'),
+            'phone'=> request ('phone'),
+        ]);
+        return redirect()->back()
+            ->with('message',"Profile Updated Successfully");
+    }
+
+    public function avatar (Request $request){
+        $email= Auth::guard('customer')->user()->email;
+        if($request->hasFile('avatar')){
+            $file = $request->file('avatar');
+            $text = $file->getClientOriginalExtension();
+            $fileName = time().'.'.$text;
+            $file->move('img/avatar',$fileName);
+            Customer::where('email',$email)->update([
+                'avatar'=>$fileName
+            ]);
+            return redirect()->back()
+                ->with('message',"Avatar Uploaded Successfully");
+        }
     }
 
 }

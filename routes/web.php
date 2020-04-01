@@ -47,6 +47,7 @@ Route::get('/admin/total-revenue','DashboardController@getTotalRevenue');
 Route::get('/admin/chart','DashboardController@getChartDataApi');
 Route::get('/admin/chart-1','DashboardController@getPieChartDataApi');
 Route::get('/admin/chart-2','DashboardController@getColumnChartDataApi');
+
 Route::get('/','HomepageController@showHomepage');
 Route::get('/faqs','HomepageController@showFAQs');
 Route::get('/return','HomepageController@showReturn');
@@ -91,6 +92,9 @@ Route::get('/user/login', 'UserLoginController@login');
 Route::post('/user/login', 'UserLoginController@postLogin');
 Route::get('/user/logout', 'UserLoginController@logout');
 Route::post('/user/register-process', 'UserLoginController@createCustomerAccount');
+Route::get('/userprofile','UserLoginController@showUserProfile');
+Route::post('profile/store','UserLoginController@store')->name('profile.store');
+Route::post('profile/avatar','UserLoginController@avatar')->name('profile.avatar');
 
 Auth::routes();
 

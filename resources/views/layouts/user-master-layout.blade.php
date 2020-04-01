@@ -98,10 +98,15 @@
 
                 <!-- Header Icon -->
                 <div class="header-icons">
-                    <a href="/user/login" class="header-wrapicon1 dis-block">
-                        <img src="{{asset('img/icon-header-01.png')}}" class="header-icon1" alt="ICON">
-                    </a>
-
+                    @if(isset($logged_in))
+                        <a href="/user/logout" class="header-wrapicon1 dis-block">
+                            Log out
+                        </a>
+                    @else
+                        <a href="/user/login" class="header-wrapicon1 dis-block">
+                            <img src="{{asset('img/icon-header-01.png')}}" class="header-icon1" alt="ICON">
+                        </a>
+                    @endif
                     <span class="linedivide2"></span>
 
                     <div class="header-wrapicon2">

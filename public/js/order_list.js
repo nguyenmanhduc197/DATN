@@ -110,7 +110,7 @@ $(function () {
                     for (var i in new_items){
                         new_content += '<tr class="odd gradeX row-item" id="row-item-' + new_items[i].id + '"' + '>';
                         new_content += '<td style="text-align:center">' + new_items[i].customer_id + '</td>';
-                        new_content += '<th style="text-align:center">' + 'namnn13' + '</th>';
+                        new_content += '<th style="text-align:center">' + 'ducnm' + '</th>';
                         new_content += '<td style="text-align:center">';
                         new_content += '-' + new_items[i].ship_name + '<br>' + '-' + new_items[i].ship_phone + '<br>' + '-' + new_items[i].ship_address;
                         new_content += '</td>';

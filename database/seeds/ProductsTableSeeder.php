@@ -43,6 +43,8 @@ class ProductsTableSeeder extends Seeder
                 'price' => 850000,
                 'discount' => 5,
                 'brand_id' => '1',
+                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1585062089/1431709125720_cookie_dough_2_.600w_620x_dg8dba.jpg',
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 6, 17, 29, 22),
                 'updated_at'=>\Carbon\Carbon::create(2020, 2, 6, 17, 29, 25)
             ],
             [

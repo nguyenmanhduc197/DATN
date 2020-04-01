@@ -20,14 +20,17 @@ class CustomersTableSeeder extends Seeder
             [
                 'username'=>'nguyenmanhduc197',
                 'password'=>hash::make('duc1234'),
-                'full_name'=>'Nguyen Manh Duc',
+                'full_name'=>'Nguyễn Mạnh Đức',
                 'gender'=>2,
-                'address'=>'Hanoi',
+                'address'=>'266 Nguyễn Văn Cừ, Hà Nội',
+                'avatar'=>'',
                 'email'=>'nguyenmanhduc197@gmail.com',
                 'DOB'=>'1997-07-19',
                 'phone'=>'0392699990',
                 'role'=>2,
-                'status'=>1
+                'status'=>1,
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00)
             ],
 
 
