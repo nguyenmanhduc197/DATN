@@ -81,7 +81,7 @@ class ProductController extends Controller
                 foreach ($images as $image) {
                     $image_id = time();
                     Cloudder::upload($image->getRealPath(), $image_id);
-                    $images_list .= Cloudder::secureShow($image_id) . "&";
+                    $images_list .= Cloudder::secureShow($image_id) ;
                 }
             }
             $obj -> images = $images_list;
@@ -185,7 +185,7 @@ class ProductController extends Controller
                 foreach ($images as $image) {
                     $image_id = time();
                     Cloudder::upload($image->getRealPath(), $image_id);
-                    $remain_images .= Cloudder::secureShow($image_id) . "&";
+                    $remain_images .= Cloudder::secureShow($image_id) ;
                 }
             }
             $obj -> images = $remain_images;

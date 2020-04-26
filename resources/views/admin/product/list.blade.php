@@ -30,7 +30,7 @@
             @foreach($obj as $item)
                 <tr class="odd gradeX row-item" id="row-item-{{$item->id}}">
                     <td style="text-align: center">
-                        <img src="{{$item->images}}" style="max-height: 30%">
+                        <img width="150px" src="{{explode('&',$item->images)[0]}}" style="max-height: 30%">
                     </td>
                     <td style="text-align: center">{{$item -> name}}</td>
                     <td style="text-align: center">{{$item -> category -> name}}</td>
@@ -45,7 +45,7 @@
                         @endif
                     </td>
                     <td class="black-icon" style="text-align: center">
-                        <a href="#" class="fa fa-pencil btn-quick-edit mr-2"></a>
+                        <a href="#" data-id="{{$item -> id}}" class="fa fa-pencil btn-quick-edit mr-2"></a>
                         <a href="#" id="{{$item -> id}}" class="fa fa-trash mr-2"></a>
                     </td>
                 </tr>

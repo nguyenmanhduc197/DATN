@@ -27,7 +27,7 @@
             @foreach($obj as $item)
                 <tr class="odd gradeX row-item" id="row-item-{{$item->id}}">
                     <td style="text-align: center">
-                        <img src="{{$item->logo}}" style="max-height: 15%"/>
+                        <img width="150px" src="{{$item->logo}}" style="max-height: 15%"/>
                     </td>
                     <td style="text-align: center">{{$item -> name}}</td>
                     <td>{{$item -> description}}</td>

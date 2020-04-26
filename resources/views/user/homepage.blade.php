@@ -1,6 +1,8 @@
 @extends('layouts.user-master-layout',['currentPage' => 'homepage'])
 @section('page-title','Gymer Store')
 @section('content')
+
+    <!-- Banner -->
     <section class="slide1">
         <div class="wrap-slick1">
             <div class="slick1">
@@ -45,7 +47,7 @@
         </div>
     </section>
 
-    <!-- Banner -->
+    <!-- Categories -->
     <section class="banner bgwhite p-t-40 p-b-40">
         <div class="container">
             <div class="row">
@@ -134,7 +136,7 @@
         </div>
     </section>
 
-    <!-- New Product -->
+    <!-- HOT Product -->
     <section class="newproduct bgwhite p-t-45 p-b-105">
         <div class="container">
             <div class="sec-title p-b-60">
@@ -203,7 +205,7 @@
         </div>
     </section>
 
-    <!-- Instagram -->
+    <!-- Brands -->
     <section class="instagram p-t-20">
         <div class="sec-title p-b-52 p-l-15 p-r-15">
             <h3 class="m-text5 t-center">

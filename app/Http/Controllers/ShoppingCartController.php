@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\CartItem;
 use App\Category;
+use App\CategoryNews;
+use App\Customer;
 use App\Http\Requests\StoreCustomer;
 use App\Order;
 use App\OrderDetail;
@@ -12,6 +14,7 @@ use App\ShoppingCart;
 use App\subcribed_user;
 use App\Subscribed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
@@ -46,16 +49,27 @@ class ShoppingCartController extends Controller
         return response()->json(['msg' => 'Thêm vào giỏ hàng thành công', 'shopping_cart' => $shopping_cart], 200);
     }
 
+    private function addPoint($email, $money) {
+        $user = Customer::where('email', '=', $email)->first();
+        if (!$user) {
+            return;
+        }
+        $point = round($money / 100000);
+        $user->point += $point;
+        $user->save();
+    }
 
     public function showCart()
     {
         $obj_category = Category::where('status', 1)->get();
+        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.cart')
             ->with('obj_category',$obj_category)
+            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
@@ -84,23 +98,27 @@ class ShoppingCartController extends Controller
 
     public function checkout(){
         $obj_category = Category::where('status', 1)->get();
+        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.checkout')
             ->with('obj_category',$obj_category)
+            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
     public function payment(){
         $obj_category = Category::where('status', 1)->get();
+        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.payment')
             ->with('obj_category',$obj_category)
+            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
@@ -108,6 +126,7 @@ class ShoppingCartController extends Controller
     {
         $request -> validated();
         $obj_category = Category::where('status', 1)->get();
+        $obj_categoryNews = CategoryNews::all();
         if (Session::has('cart')) {
             try {
                 DB::beginTransaction();
@@ -134,7 +153,7 @@ class ShoppingCartController extends Controller
                 $order->ship_phone = $ship_phone;
                 $order->ship_email = $email;
                 $order->payment_method = $payment_method;
-                $order->total_price = $shopping_cart -> getTotalMoney();
+                $money = $order->total_price = $shopping_cart -> getTotalMoney();
                 $order->save();
                 $order_id = $order->id;
                 $order_details = array();
@@ -165,10 +184,12 @@ class ShoppingCartController extends Controller
                         ->to($mail, $ship_name)
                         ->subject('Hóa đơn đơn hàng #' . $order_id -> id);
                 });
+                $this->addPoint($email, $money);
                 DB::commit();
                 Session::remove('cart');
                 return view('user.receipt')
                     ->with('obj_category',$obj_category)
+                    ->with('obj_categoryNews',$obj_categoryNews)
                     ->with('order', $order)
                     ->with('order_details', $order_details);
             } catch (\Exception $exception) {
@@ -199,12 +220,14 @@ class ShoppingCartController extends Controller
     public function receipt()
     {
         $obj_category = Category::where('status', 1)->get();
+        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.receipt3')
             ->with('obj_category',$obj_category)
+            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 }

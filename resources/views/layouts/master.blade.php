@@ -112,7 +112,8 @@
                 </li>
                 <li class="treeview @yield('active-user')">
                     <a href="#">
-                        <i class="fa fa-user"></i> <span>Quản lý tài khoản</span>
+                        <i class="fa fa-user"></i>
+                        <span>Quản lý tài khoản</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>

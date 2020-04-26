@@ -21,10 +21,10 @@ class OrdersTableSeeder extends Seeder
                 'ship_name'=>'Ngô Ngọc Nam',
                 'ship_address'=>'Hà Nội',
                 'ship_phone'=>'01548795621',
-                'ship_email'=>'ngongocnam2210@gmail.com',
+                'ship_email'=>'ngongocnam223@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 20, 6, 32, 34),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 20, 12, 15, 15),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 20, 6, 32, 34),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 20, 12, 15, 15),
                 'status'=>0
             ],
             [
@@ -35,8 +35,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0989874514',
                 'ship_email'=>'vu.tienphuc97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 26, 3, 33, 33),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 26, 11, 16, 16),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 26, 3, 33, 33),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 26, 10, 16, 16),
                 'status'=>1
             ],
             [
@@ -47,8 +47,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'012345667889',
                 'ship_email'=>'vohophuongnam@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 24, 3, 32, 32),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 24, 13, 17, 17),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 24, 3, 32, 32),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 24, 13, 17, 17),
                 'status'=>0
             ],
             [
@@ -59,8 +59,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01678411215',
                 'ship_email'=>'abcdefghij@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 21, 2, 31, 31),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 21, 8, 30, 20),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 21, 2, 31, 31),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 21, 8, 30, 20),
                 'status'=>2
             ],
             [
@@ -71,8 +71,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01232547741',
                 'ship_email'=>'abcdefghij9999@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 22, 1, 20, 20),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 22, 14, 20, 20),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 22, 1, 20, 20),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 22, 14, 20, 20),
                 'status'=>0
             ],
             [
@@ -83,8 +83,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01697511478',
                 'ship_email'=>'abcdefghij7@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 23, 9, 20, 20),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 23, 15, 14, 20),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 23, 9, 20, 20),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 23, 15, 14, 20),
                 'status'=>-1
             ],
             [
@@ -95,8 +95,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0988507254',
                 'ship_email'=>'abcdefghij123456@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 10, 10, 35, 28),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 10, 16, 37, 21),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 10, 10, 35, 28),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 10, 16, 37, 21),
                 'status'=>0
             ],
             [
@@ -107,8 +107,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01478479815',
                 'ship_email'=>'abcdefghij1234@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 20, 10, 20, 20),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 20, 17, 27, 45),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 20, 10, 20, 20),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 20, 17, 27, 45),
                 'status'=>1
             ],
             [
@@ -119,8 +119,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01254789856',
                 'ship_email'=>'quangbobby163@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 21, 11, 26, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 21, 18, 26, 29),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 21, 11, 26, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 21, 18, 26, 29),
                 'status'=>0
             ],
             [
@@ -131,8 +131,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'01548745981',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 22, 12, 23, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 22, 19, 24, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 22, 12, 23, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 22, 19, 24, 25),
                 'status'=>1
             ],
             [
@@ -143,8 +143,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0987667106',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 11, 11, 40, 36),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 11, 11, 40, 37),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 11, 11, 40, 36),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 11, 11, 40, 37),
                 'status'=>2
             ],
             [
@@ -155,8 +155,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0987556190',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 14, 02, 46, 14),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 14, 02, 46, 14),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 14, 02, 46, 14),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 14, 02, 46, 14),
                 'status'=>2
             ],
             [
@@ -167,8 +167,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0987667106',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 10, 9, 19, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 10, 9, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 10, 9, 19, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 10, 9, 19, 25),
                 'status'=>2
             ],
             [
@@ -179,8 +179,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0912476495',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 12, 8, 12, 11),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 12, 8, 14, 10),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 12, 8, 12, 11),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 12, 8, 14, 10),
                 'status'=>0
             ],
             [
@@ -191,8 +191,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0966739485',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 8, 15, 34, 12),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 8, 15, 39, 13),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 8, 15, 34, 12),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 8, 15, 39, 13),
                 'status'=>2
             ],
             [
@@ -203,8 +203,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0965334859',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 12, 8, 15, 23),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 12, 8, 24, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 12, 8, 15, 23),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 12, 8, 24, 25),
                 'status'=>1
             ],
             [
@@ -215,8 +215,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0988671360',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 10, 12, 30, 10),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 10, 12, 37, 15),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 10, 12, 30, 10),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 10, 12, 37, 15),
                 'status'=>0
             ],
             [
@@ -227,8 +227,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0937349328',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Paypal',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 27, 22, 12, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 27, 22, 12, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 27, 22, 12, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 27, 22, 12, 25),
                 'status'=>2
             ],
             [
@@ -239,8 +239,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'09871234124',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 01, 8, 39, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 01, 8, 44, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 01, 8, 39, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 01, 8, 44, 25),
                 'status'=>1
             ],
             [
@@ -251,8 +251,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0983742345',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 30, 19, 34, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 30, 19, 44, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 30, 19, 34, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 30, 19, 44, 25),
                 'status'=>0
             ],
             [
@@ -260,11 +260,11 @@ class OrdersTableSeeder extends Seeder
                 'total_price'=>4187000,
                 'ship_name'=>'Trần Hải Đăng',
                 'ship_address'=>'Hà Nội',
-                'ship_phone'=>'0934839211',
+                'ship_phone'=>'093483923',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 28, 19, 23, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 28, 19, 29, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 28, 19, 23, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 28, 19, 29, 25),
                 'status'=>2
             ],
             [
@@ -275,8 +275,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0978324170',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 8, 17, 21, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 8, 17, 29, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 8, 17, 21, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 8, 17, 29, 25),
                 'status'=>2
             ],
             [
@@ -287,8 +287,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0937632823',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 16, 16, 36, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 16, 16, 39, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 16, 16, 36, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 16, 16, 39, 25),
                 'status'=>2
             ],
             [
@@ -299,8 +299,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0937412732',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 14, 13, 12, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 14, 13, 24, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 14, 13, 12, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 14, 13, 24, 25),
                 'status'=>-1
             ],
             [
@@ -311,8 +311,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932714380',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 18, 14, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 18, 14, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 18, 14, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 18, 14, 19, 25),
                 'status'=>2
             ],
             [
@@ -323,8 +323,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0923782144',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 18, 15, 23, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 18, 15, 29, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 18, 15, 23, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 18, 15, 29, 25),
                 'status'=>-1
             ],
             [
@@ -335,8 +335,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 14, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 14, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 14, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 14, 10, 19, 25),
                 'status'=>2
             ],
             [
@@ -347,8 +347,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0983473780',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 15, 11, 15, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 15, 11, 16, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 15, 3, 15, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 15, 3, 16, 25),
                 'status'=>-1
             ],
             [
@@ -359,8 +359,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0938174294',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 12, 22, 18, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 12, 22, 18, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 22, 18, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 22, 18, 19, 25),
                 'status'=>-1
             ],
             [
@@ -371,8 +371,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932536577',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 13, 19, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 13, 19, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 13, 19, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 13, 19, 19, 25),
                 'status'=>-1
             ],
             [
@@ -383,8 +383,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 24, 20, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 24, 20, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 24, 20, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 24, 20, 19, 25),
                 'status'=>-1
             ],
             [
@@ -395,8 +395,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0983215443',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 14, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 14, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 14, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 14, 10, 19, 25),
                 'status'=>-1
             ],
             [
@@ -407,8 +407,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932312582',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 8, 16, 11, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 8, 16, 11, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 1, 16, 11, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 1, 16, 11, 19, 25),
                 'status'=>-1
             ],[
                 'customer_id'=>'KH1536944374',
@@ -418,8 +418,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0934733252',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 8, 22, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 8, 22, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 22, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 22, 10, 19, 25),
                 'status'=>2
             ],
             [
@@ -430,8 +430,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 14, 12, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 14, 12, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 14, 12, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 14, 12, 19, 25),
                 'status'=>0
             ],
             [
@@ -442,20 +442,20 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0973683342',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 8, 15, 11, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 8, 15, 11, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 1, 15, 11, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 1, 15, 11, 19, 25),
                 'status'=>1
             ],
             [
                 'customer_id'=>'KH1536944639',
-                'total_price'=>1170000,
+                'total_price'=>370000,
                 'ship_name'=>'Nguyễn Mạnh',
                 'ship_address'=>'Hà Nội',
                 'ship_phone'=>'0973215235',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 22, 13, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 22, 13, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 22, 13, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 22, 13, 19, 25),
                 'status'=>2
             ],[
                 'customer_id'=>'KH1536944787',
@@ -465,8 +465,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0943566342',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 24, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 24, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 24, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 24, 10, 19, 25),
                 'status'=>1
             ],
             [
@@ -477,8 +477,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0983343215',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 16, 14, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 16, 14, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 16, 14, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 16, 14, 19, 25),
                 'status'=>0
             ],
             [
@@ -489,8 +489,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 7, 14, 15, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 7, 14, 15, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 14, 15, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 14, 15, 19, 25),
                 'status'=>2
             ],
             [
@@ -501,8 +501,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 7, 16, 17, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 7, 16, 17, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 16, 17, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 16, 17, 19, 25),
                 'status'=>2
             ],
             [
@@ -513,8 +513,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932155323',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 7, 22, 13, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 7, 22, 13, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 22, 13, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 22, 13, 19, 25),
                 'status'=>2
             ],
             [
@@ -525,8 +525,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 8, 16, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 8, 16, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 1, 16, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 1, 16, 10, 19, 25),
                 'status'=>2
             ],
             [
@@ -537,8 +537,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0931243223',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 8, 24, 11, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 8, 24, 11, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 1, 24, 11, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 1, 24, 11, 19, 25),
                 'status'=>0
             ],[
                 'customer_id'=>'KH1536945130',
@@ -548,8 +548,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932143521',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 10, 30, 12, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 10, 30, 12, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 30, 12, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 30, 12, 19, 25),
                 'status'=>1
             ],
             [
@@ -560,8 +560,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932145332',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 10, 14, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 10, 14, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 10, 14, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 10, 14, 19, 25),
                 'status'=>2
             ],
             [
@@ -572,8 +572,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 12, 13, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 12, 13, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 12, 13, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 12, 13, 19, 25),
                 'status'=>2
             ],
             [
@@ -584,8 +584,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0943125233',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 13, 14, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 13, 14, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 13, 14, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 13, 14, 19, 25),
                 'status'=>1
             ],
             [
@@ -596,8 +596,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0931453412',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 11, 14, 15, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 11, 14, 15, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 14, 15, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 14, 15, 19, 25),
                 'status'=>2
             ],
             [
@@ -608,8 +608,8 @@ class OrdersTableSeeder extends Seeder
                 'ship_phone'=>'0932746378',
                 'ship_email'=>'mocchua97@gmail.com',
                 'payment_method' => 'Cod',
-                'created_at'=>\Carbon\Carbon::create(2018, 9, 14, 10, 13, 22),
-                'updated_at'=>\Carbon\Carbon::create(2018, 9, 14, 10, 19, 25),
+                'created_at'=>\Carbon\Carbon::create(2020, 2, 14, 10, 13, 22),
+                'updated_at'=>\Carbon\Carbon::create(2020, 2, 14, 10, 19, 25),
                 'status'=>2
             ],
         ]);

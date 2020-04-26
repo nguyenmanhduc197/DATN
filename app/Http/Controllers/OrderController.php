@@ -24,7 +24,7 @@ class OrderController extends Controller
         //
 
         if (Auth::check()) {
-            $obj = Order::all();
+            $obj = Order::orderBy('created_at','desc')->get();
             return view('admin.order.list')
                 ->with('obj', $obj);
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');

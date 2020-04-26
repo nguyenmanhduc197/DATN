@@ -29,6 +29,12 @@ $(".fa-trash").click(function () {
 });
 
 $(function () {
+    $('#dataTables-example1').DataTable({
+        responsive: true,
+        bDestroy: true,
+        order: [[ 3, "desc" ]]
+    });
+
     var start = moment().subtract(29, 'days');
     var end = moment();
 
@@ -110,7 +116,7 @@ $(function () {
                     for (var i in new_items){
                         new_content += '<tr class="odd gradeX row-item" id="row-item-' + new_items[i].id + '"' + '>';
                         new_content += '<td style="text-align:center">' + new_items[i].customer_id + '</td>';
-                        new_content += '<th style="text-align:center">' + 'ducnm' + '</th>';
+                        new_content += '<th style="text-align:center">' + 'nguyenmanhduc197' + '</th>';
                         new_content += '<td style="text-align:center">';
                         new_content += '-' + new_items[i].ship_name + '<br>' + '-' + new_items[i].ship_phone + '<br>' + '-' + new_items[i].ship_address;
                         new_content += '</td>';
@@ -176,10 +182,6 @@ $(function () {
                 // $('#dataTables-example_info').remove();
                 // $('#dataTables-example_paginate').remove();
                 // $('#dataTables-example_length').remove();
-                // $('#dataTables-example').DataTable({
-                //     responsive: true,
-                //     bDestroy: true,
-                // });
                 $('#order_list').html(new_content);
             },
             error: function () {

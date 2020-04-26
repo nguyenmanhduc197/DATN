@@ -1,5 +1,6 @@
 @extends('layouts.master',['currentPage' => 'edit'])
 @section('page-title', 'EDIT ACCOUNT')
+@section('active-user','active')
 @section('content')
     <div class="row">
         <div class="col-lg-12">

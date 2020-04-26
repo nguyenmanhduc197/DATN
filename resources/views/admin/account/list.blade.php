@@ -1,11 +1,11 @@
 @extends('layouts.new-master', ['currentPage' => 'list'])
 @section('page-title', 'Danh sách tài khoản')
-@section('active-list-user','active')
-@section('show-user','show')
+@section('active-list-admin','active')
+@section('show-list','show')
 @section('content')
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header text-center" style="font-size: 30px;">Danh sách tài khoản</h1>
+            <h1 class="page-header text-center" style="font-size: 30px;">Danh sách tài khoản Admin</h1>
         </div>
     </div>
     <div class="panel-body">
@@ -23,6 +23,7 @@
                 <th style="text-align: center">Địa chỉ</th>
                 <th style="text-align: center">Ngày sinh</th>
                 <th style="text-align: center">Phone</th>
+                <th style="text-align: center">Trạng thái</th>
                 <th style="text-align: center">Thao tác</th>
             </tr>
             </thead>
@@ -31,14 +32,26 @@
                 <tr class="odd gradeX row-item" id="row-item-{{$item->id}}">
                     <td style="text-align: center">{{$item->username}}</td>
                     <td style="text-align: center">{{$item -> full_name}}</td>
-                    <td style="text-align: center">{{$item -> gender}}</td>
+                    <td style="text-align: center">
+                        @if($item -> gender == 1)
+                            {{'Nữ'}}
+                        @else
+                            {{'Nam'}}
+                        @endif
+                    </td>
                     <td style="text-align: center">{{$item -> email}}</td>
                     <td style="text-align: center">{{$item -> address}}</td>
                     <td style="text-align: center">{{$item -> DOB}}</td>
                     <td style="text-align: center">{{$item -> phone}}</td>
+                    <td style="text-align: center">
+                        @if($item->status==1)
+                            <div class="active-banner">
+                                Đang kích hoạt
+                            </div>
+                        @endif
+                    </td>
                     <td class="black-icon" style="text-align: center">
-                        <a href="#" class="fa fa-pencil btn-quick-edit mr-2"></a>
-                        <a href="#" id="{{$item -> id}}" class="fa fa-trash mr-2"></a>
+                        <a href="#" class="fa fa-lock btn-quick-edit mr-2"></a>
                     </td>
                 </tr>
             @endforeach
@@ -64,7 +77,7 @@
                         {{csrf_field()}}
                         <input type="hidden" name="quick-update-id">
                         <div class="form-group">
-                            <label>Mổ tả</label>
+                            <label>Mô tả</label>
                             <textarea class="form-control" name="description" rows="5"></textarea>
                         </div>
                         <div class="form-group">
@@ -84,5 +97,5 @@
     </div>
     {{--Quick Edit Modal--}}
 
-    <script src="{{asset('/js/account_list.js')}}"></script>
+    <script src="#"></script>
 @endsection

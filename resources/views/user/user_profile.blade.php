@@ -35,7 +35,6 @@
 
                         </div>
                     </form>
-
                 </div>
 
                 {{--Update Profile--}}
@@ -47,15 +46,15 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label>Full Name</label>
-                                    <textarea class="form-control" name="full_name" rows="1"></textarea>
+                                    <textarea class="form-control" name="full_name" rows="1" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Phone</label>
-                                    <textarea class="form-control" name="phone" rows="1" ></textarea>
+                                    <textarea class="form-control" name="phone" rows="1" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Address</label>
-                                    <textarea class="form-control" name="address" rows="3"></textarea>
+                                    <textarea class="form-control" name="address" rows="3" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-success">Update</button>
@@ -74,7 +73,8 @@
                 <div class="col-md-5 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-title font-weight-bold">About</p>
+                            <p class="card-title font-weight-light text-primary">Điểm tích luỹ: <span class="header-cart-item-txt text-danger font-weight-bold ">{{\Illuminate\Support\Facades\Auth::guard('customer')->user()->point}}</span> <i class ="fa fa-usd text-danger" aria-hidden="true"></i></p>
+                            <span class="card-description">( 1$ ~ 1.000 VND ) </span>
                             <hr>
                             <p class="card-description">User Information</p>
                             <ul class="about">
@@ -91,7 +91,11 @@
                             <p class="card-description">Basic Information</p>
                             <ul class="about">
                                 <li class="about-items"><i class="mdi mdi-cake icon-sm "></i><span class="about-item-name">Birthday:</span><span class="about-item-detail">{{\Illuminate\Support\Facades\Auth::guard('customer')->user()->DOB}}</span></li>
-                                <li class="about-items"><i class="mdi mdi-account icon-sm "></i><span class="about-item-name">Gender:</span><span class="about-item-detail">Male</span></li>
+                                @if(\Illuminate\Support\Facades\Auth::guard('customer')->user()->gender == 1)
+                                    <li class="about-items"><i class="mdi mdi-account icon-sm "></i><span class="about-item-name">Gender:</span><span class="about-item-detail">Nữ</span></li>
+                                @else
+                                    <li class="about-items"><i class="mdi mdi-account icon-sm "></i><span class="about-item-name">Gender:</span><span class="about-item-detail">Nam</span></li>
+                                @endif
                                 <li class="about-items"><i class="mdi mdi-clipboard-account icon-sm "></i><span class="about-item-name">Member Since:</span><span class="about-item-detail">{{\Illuminate\Support\Facades\Auth::guard('customer')->user()->created_at->diffForHumans()}}</span></li>
                             </ul>
                         </div>

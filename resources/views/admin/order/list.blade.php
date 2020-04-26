@@ -19,7 +19,7 @@
             <div class="alert alert-success hidden">
             </div>
         @endif
-        <table width="100%" class="table table-hover" id="dataTables-example">
+        <table width="100%" class="table table-hover" id="dataTables-example1">
             <thead>
             <tr>
                 <th style="text-align: center">ID Khách hàng</th>

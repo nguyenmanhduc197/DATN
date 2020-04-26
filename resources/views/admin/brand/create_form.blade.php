@@ -80,10 +80,9 @@
         if($(".alert-success")[0]){
             swal({
                     title: 'Saved Sucess',
-                    text: 'Brand information saved into dababase',
                     type: 'success',
                     allowOutsideClick: true,
-                    html: true
+                    html: 'Brand information saved into dababase'
                 },
                 function (isConfirm) {
                     if (isConfirm) {

@@ -90,20 +90,20 @@
                 $(".preview_images").addClass('hidden');
                 $(".preview_image").remove();
             });
+            if($(".alert-success")[0]){
+                swal({
+                        title: 'Saved Success',
+                        type: 'success',
+                        allowOutsideClick: true,
+                        html: 'Product information saved into dababase'
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            window.location.href = '/admin/product';
+                        }
+                    });
+            }
         });
-        if($(".alert-success")[0]){
-            swal({
-                    title: 'Saved Sucess',
-                    text: 'Product information saved into dababase',
-                    type: 'success',
-                    allowOutsideClick: true,
-                    html: true
-                },
-                function (isConfirm) {
-                    if (isConfirm) {
-                        window.location.href = '/admin/product';
-                    }
-                });
-        }
+
     </script>
 @endsection

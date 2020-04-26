@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('font/font-awesome/css/font-awesome.min.css')}}"/>
     <title>@yield('page-title')</title>
     <link rel="icon" type="image/png" href="{{asset('img/GS_logo.jpg')}}"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/themify-icons.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/icon-font.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('font/user-master-layout-font/style.css')}}">
@@ -83,6 +84,15 @@
 
                             <li class="sale-noti">
                                 <a href="{{'/product'.'?bigSale=1'}}">Giảm giá sốc</a>
+                            </li>
+
+                            <li>
+                                <a href="/news">Tin tức thể hình</a>
+                                <ul class="sub_menu">
+                                    @foreach($obj_categoryNews as $item)
+                                        <li><a href="#">{{$item -> name}}</a></li>
+                                    @endforeach
+                                </ul>
                             </li>
 
                             <li>
@@ -408,5 +418,8 @@
 <script src="{{asset('/js/product.js')}}"></script>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script src="{{asset('js/my_script.js')}}"></script>
+
+
+
 </body>
 </html>

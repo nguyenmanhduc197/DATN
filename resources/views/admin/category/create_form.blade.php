@@ -74,10 +74,9 @@
         if($(".alert-success")[0]){
             swal({
                     title: 'Saved Sucess',
-                    text: 'Category information saved into dababase',
                     type: 'success',
                     allowOutsideClick: true,
-                    html: true
+                    html: 'Category information saved into dababase'
                 },
                 function (isConfirm) {
                     if (isConfirm) {

@@ -33,7 +33,7 @@ class UserLoginController extends Controller
             'password.min' => 'Mật khẩu từ 6-20 ký tự',
             'password.max' => 'Mật khẩu từ 6-20 ký tự'
         ]);
-        if (Auth::guard('customer')->attempt(['username' => $request->username, 'password' => $request->password])) {
+        if (Auth::guard('customer')->attempt(['username' => $request->username, 'password' => $request->password, 'status' => 1])) {
             return redirect('/userprofile');
         } else {
             return redirect()->back()->with('message', 'Tên đăng nhập hoặc mật khẩu không đúng ');
@@ -103,7 +103,7 @@ class UserLoginController extends Controller
         $obj->phone = Input::get('phone');
         $obj->DOB = Input::get('DOB');
         $obj->role = 2;
-        $obj->status = 0;
+        $obj->status = 1;
         $obj->save();
         return redirect()->back()->with('message', 'Đăng ký thành công');
 
@@ -150,6 +150,10 @@ class UserLoginController extends Controller
         if($request->hasFile('avatar')){
             $file = $request->file('avatar');
             $text = $file->getClientOriginalExtension();
+            if($text != 'jpg' && $text != 'png' && $text != 'jpeg'){
+                return redirect()->back()
+                    ->with('message',"Choose jpg, png, jpeg files extensions");
+            }
             $fileName = time().'.'.$text;
             $file->move('img/avatar',$fileName);
             Customer::where('email',$email)->update([

@@ -23,6 +23,7 @@
     <script type="text/javascript" src={{asset("/js/numeral.js")}}></script>
     <link href="{{asset('css/master-layout-3-css/demo.css')}}" rel="stylesheet" />
 
+
 </head>
 
 <body>
@@ -50,16 +51,22 @@
                     <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
                         <i class="nc-icon nc-app"></i>
                         <p>
-                            Quản lý tài khoản admin
+                            Quản lý tài khoản
                             <b class="caret"></b>
                         </p>
                     </a>
-                    <div class="collapse @yield('show-user')" id="componentsExamples">
+                    <div class="collapse @yield('show-list')" id="componentsExamples">
                         <ul class="nav">
-                            <li class="nav-item @yield('active-list-user')">
+                            <li class="nav-item @yield('active-list-admin')">
                                 <a class="nav-link" href="/admin/account">
-                                    <span class="sidebar-mini">AD</span>
-                                    <span class="sidebar-normal">Danh sách tài khoản</span>
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">List Admin</span>
+                                </a>
+                            </li>
+                            <li class="nav-item @yield('active-list-customer')">
+                                <a class="nav-link" href="/admin/accountCustomer">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">List Customer</span>
                                 </a>
                             </li>
                         </ul>
@@ -77,13 +84,13 @@
                         <ul class="nav">
                             <li class="nav-item @yield('active-list-product')">
                                 <a class="nav-link" href="/admin/product">
-                                    <span class="sidebar-mini">PD</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách sản phẩm</span>
                                 </a>
                             </li>
                             <li class="nav-item @yield('active-create-product')">
                                 <a class="nav-link" href="/admin/product/create">
-                                    <span class="sidebar-mini">NPD</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Thêm sản phẩm mới</span>
                                 </a>
                             </li>
@@ -102,13 +109,13 @@
                         <ul class="nav">
                             <li class="nav-item @yield('active-list-category')">
                                 <a class="nav-link" href="/admin/category">
-                                    <span class="sidebar-mini">CT</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách danh mục</span>
                                 </a>
                             </li>
                             <li class="nav-item @yield('active-create-category')">
                                 <a class="nav-link" href="/admin/category/create">
-                                    <span class="sidebar-mini">NCT</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Thêm danh mục mới</span>
                                 </a>
                             </li>
@@ -127,14 +134,64 @@
                         <ul class="nav">
                             <li class="nav-item @yield('active-list-brand')">
                                 <a class="nav-link" href="/admin/brand">
-                                    <span class="sidebar-mini">BR</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách nhãn hiệu</span>
                                 </a>
                             </li>
                             <li class="nav-item @yield('active-create-brand')">
                                 <a class="nav-link" href="/admin/brand/create">
-                                    <span class="sidebar-mini">NBR</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Thêm nhãn hiệu mới</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#forms2Examples">
+                        <i class="nc-icon nc-notification-70"></i>
+                        <p>
+                            Quản lý Tin tức
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse @yield('show-news')" id="forms2Examples">
+                        <ul class="nav">
+                            <li class="nav-item @yield('active-list-news')">
+                                <a class="nav-link" href="/admin/news">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">Danh sách tin</span>
+                                </a>
+                            </li>
+                            <li class="nav-item @yield('active-create-news')">
+                                <a class="nav-link" href="/admin/news/create">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">Thêm tin mới</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#tables2Examples">
+                        <i class="nc-icon nc-paper-2"></i>
+                        <p>
+                            Quản lý loại Tin
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse @yield('show-category-news')" id="tables2Examples">
+                        <ul class="nav">
+                            <li class="nav-item @yield('active-list-category-news')">
+                                <a class="nav-link" href="/admin/categoryNews">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">Danh sách loại tin</span>
+                                </a>
+                            </li>
+                            <li class="nav-item @yield('active-create-category-news')">
+                                <a class="nav-link" href="/admin/categoryNews/create">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">Thêm thể loại tin</span>
                                 </a>
                             </li>
                         </ul>
@@ -152,7 +209,7 @@
                         <ul class="nav">
                             <li class="nav-item @yield('active-list-order')">
                                 <a class="nav-link" href="/admin/order">
-                                    <span class="sidebar-mini">OD</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách đơn hàng</span>
                                 </a>
                             </li>
@@ -171,13 +228,13 @@
                         <ul class="nav">
                             <li class="nav-item @yield('active-list-subcribers')">
                                 <a class="nav-link " href="/admin/subcriber">
-                                    <span class="sidebar-mini">SB</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách subscriber</span>
                                 </a>
                             </li>
                             <li class="nav-item @yield('active-send-email')">
                                 <a class="nav-link " href="/admin/subcriber/send-email">
-                                    <span class="sidebar-mini">EM</span>
+                                    <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Gửi email quảng cáo</span>
                                 </a>
                             </li>
@@ -275,6 +332,7 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script type="text/javascript" src="{{asset('ckeditor/ckeditor.js')}}"></script>
 
 <script>
     $(document).ready(function () {

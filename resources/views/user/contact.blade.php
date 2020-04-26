@@ -1,9 +1,11 @@
 @extends('layouts.user-master-layout')
 @section('page-title','Liên Hệ')
 @section('content')
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 <!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(http://masterlyweft.com/media/wysiwyg/images/home_3/banner1-1920x800.jpg);">
-    <h2 class="l-text2 t-center" style="color: black">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url({{asset('img/contact_banner.jpg')}});">
+    <h2 class="l-text2 t-center" style="color: white">
         Liên hệ
     </h2>
 </section>
@@ -13,8 +15,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 p-b-30">
+                <div>
+                    <i class="fas fa-home"> Gymer Store</i><br>
+                    <i class="fas fa-inbox"> Inbox : http://m.me/gymerstore.vn</i><br>
+                    <i class="fas fa-globe"> Website : https://gymerstore.vn</i><br>
+                    <i class="fas fa-mail-reply-all"> Email: gymerstore@gmail.com</i><br>
+                </div>
+                <hr>
                 <div class="p-r-20 p-r-0-lg">
-                    <div class="contact-map size21" id="google_map" data-map-x="40.614439" data-map-y="-73.926781" data-pin="images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.688968692136!2d105.84344031451369!3d21.005101386011244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad5569f4fbf1%3A0x5bf30cadcd91e2c3!2zxJDhuqBJIEjhu4xDIELDgUNIIEtIT0EgQ-G7lE5HIFRS4bqmTiDEkOG6oEkgTkdIxKhB!5e0!3m2!1svi!2s!4v1542267623751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    <div class="contact-map size21" id="google_map" data-map-x="40.614439" data-map-y="-73.926781" data-pin="images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.688968692136!2d105.84344031451369!3d21.005101386011244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad5569f4fbf1%3A0x5bf30cadcd91e2c3!2zxJDhuqBJIEjhu4xDIELDgUNIIEtIT0EgQ-G7lE5HIFRS4bqmTiDEkOG6oEkgTkdIxKhB!5e0!3m2!1svi!2s!4v1542267623751" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
             </div>
 

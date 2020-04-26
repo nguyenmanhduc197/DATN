@@ -2,8 +2,8 @@
 @section('page-title','Giới Thiệu')
 @section('content')
 <!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(https://wildhuntclothing.com/wp-content/uploads/2015/07/bannerhome1.jpg);">
-    <h2 class="l-text2 t-center" style="color: Black">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url({{asset('img/contact_banner.jpg')}});">
+    <h2 class="l-text2 t-center" style="color: White">
         Giới Thiệu
     </h2>
 </section>
@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-4 p-b-30">
                 <div class="hov-img-zoom">
-                    <img src="http://www.thearvindstore.com/assets/contact-us/PartnerWithUs.jpg" alt="IMG-ABOUT">
+                    <img src="https://i.imgur.com/auo4PfT.jpg" height="450" alt="IMG-ABOUT">
                 </div>
             </div>
 
@@ -24,17 +24,29 @@
                 </h3>
 
                 <p class="p-b-28">
-                    Từ những con người bình thường quan tâm đến thời trang cho phái mạnh. Chúng tôi đã xây dựng thiết kế những mẫu trang phục đơn giản và đặc sắc dành cho các nam giới yêu thời trang.
+                    Gymer Store cam kết bán hàng chính hãng công ty phân phối, nguồn gốc rõ ràng, đảm bảo chất lượng . Sản phẩm đều có tem cào chứng nhận của bộ Công An và bộ Y Tế kiểm định . Cam kết không bán hàng giả, hàng kém chất lượng , đền gấp 100 lần giá trị sản phẩm nếu phát hiện hàng giả .
+                </p>
+
+                <p class="p-b-28">
+                    Chúng tôi luôn mong muốn đem lại hiệu quả , sự tin tưởng và an tâm của khách hàng mỗi khi sử dụng sản phẩm của Gymerstore.vn
+                </p>
+
+                <p class="p-b-28">
+                    Phương Châm Của Gymer Store :
                 </p>
 
                 <div class="bo13 p-l-29 m-l-9 p-b-10">
                     <p class="p-b-11">
-                        Sáng tạo chỉ là kết nối mọi thứ. Khi bạn hỏi những người sáng tạo cách họ đã làm điều gì đó, họ cảm thấy có chút tội lỗi bởi vì họ không thực sự làm điều đó, họ chỉ thấy điều gì đó. Nó dường như rõ ràng với họ sau một thời gian.
+                        - Hàng đảm bảo chất lượng , mang lại hiệu quả thực sự cho khách hàng
                     </p>
+                    <p class="p-b-11">
+                        - Chính sách bán hàng rõ ràng, cam kết giá tốt nhất, giá V.I.P rẻ nhất so với thị trường
+                    </p>
+                    <p class="p-b-11">
+                        - Luôn có chương trình khuyến mại , giảm giá đối với khách hàng thân thiết
+                    </p>
+                    <hr>
 
-                    <span class="s-text7">
-							- Steve Job’s
-						</span>
                 </div>
             </div>
         </div>

@@ -3,8 +3,8 @@
 @section('content')
     <nav aria-label="breadcrumb" class="align-items-center">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/product">Sản phẩm</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 <?php
                 foreach ($obj_category as $item) {
@@ -74,8 +74,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Filters -->
 
+                <!-- Filters -->
                 <div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
                     <!--  -->
                     <div class="flex-sb-m flex-w p-b-35">
