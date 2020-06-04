@@ -23,6 +23,11 @@ class CategoriesNewsTableSeeder extends Seeder
                 'id' => '2',
                 'name' => 'Bài tập thể hình',
             ],
+            [
+                'id' => '3',
+                'name' => 'Dinh dưỡng thể hình',
+            ],
+
         ]);
     }
 }

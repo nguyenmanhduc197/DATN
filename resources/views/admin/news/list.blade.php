@@ -28,15 +28,11 @@
             <tbody>
             @foreach($obj as $item)
                 <tr class="odd gradeX row-item" id="row-item-{{$item->id}}">
-                    {{--<td style="text-align: center">
-                        <img src="{{explode('&',$item->images)[0]}}" style="max-height: 30%">
-                    </td>--}}
                     <td style="text-align: center">{{$item -> id}}</td>
                     <td style="text-align: center"><p>{{$item -> title}}</p>
                         <img width="100px" src={{$item->images}} >
                     </td>
                     <td style="text-align: center">{{$item -> summary}}</td>
-                    {{--<td style="text-align: center">{{$item -> content}}</td>--}}
                     <td style="text-align: center">{{$item -> category_news -> name}}</td>
                     <td style="text-align: center">
                         @if($item -> hot == 0)

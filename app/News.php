@@ -18,4 +18,7 @@ class News extends Model
     {
         return $this->belongsTo('App\CategoryNews','category_news_id');
     }
+    public function comment(){
+        return $this->hasMany('App\Comment','id_news');
+    }
 }

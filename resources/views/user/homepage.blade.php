@@ -54,7 +54,7 @@
                 <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$whey_protein->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$whey_protein->image}}" alt="IMG-BENNER">
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="{{'/product'.'?categoryId='.$whey_protein->id}}"
@@ -66,7 +66,7 @@
 
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$sua_tang_can->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$sua_tang_can->image}}" alt="IMG-BENNER">
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
                             <a href="{{'/product'.'?categoryId='.$sua_tang_can->id}}"
@@ -80,7 +80,7 @@
                 <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$bcaa->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$bcaa->image}}" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
@@ -93,7 +93,7 @@
 
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$phu_kien->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$phu_kien->image}}" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
@@ -108,7 +108,7 @@
                 <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
                     <!-- block1 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$vitamin->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$vitamin->image}}" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->
@@ -121,7 +121,7 @@
 
                     <!-- block2 -->
                     <div class="block1 hov-img-zoom pos-relative m-b-30">
-                        <img src="{{$pre_workout->image}}" alt="IMG-BENNER">
+                        <img style="width:370px; height: 370px" src="{{$pre_workout->image}}" alt="IMG-BENNER">
 
                         <div class="block1-wrapbtn w-size2">
                             <!-- Button -->

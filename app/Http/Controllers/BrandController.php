@@ -69,7 +69,7 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    /*public function show($id)
     {
         if (Auth::check()) {
             $obj = Brand::find($id);
@@ -78,7 +78,7 @@ class BrandController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
 
 
-    }
+    }*/
 
     /**
      * Show the form for editing the specified resource.
@@ -86,14 +86,14 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+   /* public function edit($id)
     {
         if (Auth::check()) {
             $obj = Brand::find($id);
             return view('admin.brand.edit')
                 -> with('obj',$obj);
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }
+    }*/
 
     public function quickEdit($id)
     {
@@ -114,7 +114,7 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    /*public function update(Request $request, $id)
     {
         if (Auth::check()) {
             $obj = Brand::find($id);
@@ -129,7 +129,7 @@ class BrandController extends Controller
             $obj -> save();
             echo "<script>alert('Saved Successfull'); window.location.href = '/admin/brand'</script>";
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }
+    }*/
 
     public function quickUpdate (Request $request){
         if (Auth::check()) {

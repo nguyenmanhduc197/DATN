@@ -24,6 +24,7 @@ class CreateNewsTable extends Migration
             $table->foreign('category_news_id')->references('id')->on('categories_news');
             $table->timestamps();
             $table->integer('views')->unsigned()->default(0);
+
         });
     }
 

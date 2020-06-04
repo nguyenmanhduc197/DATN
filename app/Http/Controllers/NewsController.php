@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\CategoryNews;
+use App\Comment;
 use App\News;
 use Illuminate\Http\Request;
 use App\Brand;
@@ -15,11 +16,6 @@ use Illuminate\Database;
 
 class NewsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         if(Auth::check()){
@@ -32,30 +28,45 @@ class NewsController extends Controller
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         if(Auth::check()){
             $obj_categoryNews = CategoryNews::all();
             return view('admin.news.create_form')
                 ->with('obj_categoryNews',$obj_categoryNews);
-
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-
-
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
+    public function listComment()
+    {
+        if(Auth::check()){
+            $cmts = Comment::orderBy('created_at','desc')->get();
+            $obj_categoryNews = CategoryNews::all();
+            return view('admin.news.list_comment')
+                -> with('cmts',$cmts)
+                -> with('obj_categoryNews',$obj_categoryNews);
+        }
+        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
+    }
+
+    public function censorComment()
+    {
+        if (Auth::check()) {
+            $cmts = Comment::find(Input::get('id'));
+            if ($cmts == null) {
+                return response()->json(['success' => 0], 404);
+            }
+            $cmts->status = !$cmts->status;
+            $cmts->save();
+            return response()->json(['success' => 1], 200);
+        } else return response()->json(['success' => 0], 400);
+    }
+
+
+
     public function store(StoreNews $request)
     {
         if(Auth::check()){
@@ -84,55 +95,8 @@ class NewsController extends Controller
             return redirect()->back()->with('message', 'Saved Success');
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-
-
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        if(Auth::check()){
-            $obj = News::find($id);
-            if($obj==null) {
-                return view('404');
-            }
-            return view('admin.news.show')
-                -> with('obj',$obj);
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-
-
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        if(Auth::check()){
-            $obj = News::find($id);
-            if($obj==null) {
-                return view('404');
-            }
-            $obj_categoryNews = News::all();
-            if($obj==null) {
-                return view('404');
-            }
-            return view('admin.news.edit')
-                -> with('obj',$obj)->with('obj_categoryNews',$obj_categoryNews);
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-
-
-    }
 
     public function quickEdit($id){
         if(Auth::check()){
@@ -145,20 +109,6 @@ class NewsController extends Controller
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        if(Auth::check()){
-
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-    }
 
     public function quickUpdate (Request $request){
         if(Auth::check()){
@@ -188,12 +138,7 @@ class NewsController extends Controller
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         if(Auth::check()){
@@ -202,6 +147,18 @@ class NewsController extends Controller
                 return view('404');
             }
             $obj->delete();
+        }
+        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
+    }
+
+    public function deleteComment($id)
+    {
+        if(Auth::check()){
+            $cmts = Comment::find($id);
+            if($cmts==null) {
+                return response()->json(['success' => 0], 404);
+            }
+            $cmts->delete();
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }

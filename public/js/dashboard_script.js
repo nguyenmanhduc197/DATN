@@ -52,6 +52,7 @@ $(document).ready(function () {
     })
 });
 
+//Biểu đồ doanh thu theo thời gian
 google.charts.load('current', {'packages': ['line']});
 google.charts.setOnLoadCallback(function () {
     $.ajax({
@@ -89,6 +90,8 @@ function drawChart(chart_data) {
     chart.draw(data, google.charts.Line.convertOptions(options));
 }
 
+//Biểu đồ số sản phẩm bán theo danh mục
+
 google.charts.load('current', {'packages': ['corechart']});
 google.charts.setOnLoadCallback(function () {
     $.ajax({
@@ -122,6 +125,7 @@ function drawChart_1(chart_data) {
     chart.draw(data, options);
 }
 
+//Biểu đồ sản phẩm bán theo khung giờ
 google.charts.load('current', {'packages': ['bar']});
 google.charts.setOnLoadCallback(function () {
     $.ajax({
@@ -154,6 +158,7 @@ function drawChart_2(chart_data){
     chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
+//Thời gian của biểu đồ
 $(function () {
     var start = moment().subtract(29, 'days');
     var end = moment();

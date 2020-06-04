@@ -99,7 +99,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    /*public function show($id)
     {
         if(Auth::check()){
             $obj = Product::find($id);
@@ -112,7 +112,7 @@ class ProductController extends Controller
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
 
 
-    }
+    }*/
 
     /**
      * Show the form for editing the specified resource.
@@ -120,7 +120,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+/*    public function edit($id)
     {
         if(Auth::check()){
             $obj = Product::find($id);
@@ -137,8 +137,7 @@ class ProductController extends Controller
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
 
-
-    }
+    }*/
 
     public function quickEdit($id){
         if(Auth::check()){
@@ -158,13 +157,13 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+ /*   public function update(Request $request, $id)
     {
         if(Auth::check()){
 
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-    }
+    }*/
 
     public function quickUpdate (Request $request){
         if(Auth::check()){

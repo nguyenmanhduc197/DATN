@@ -15,8 +15,6 @@ class AccountsTableSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('accounts')->truncate();
         \Illuminate\Support\Facades\DB::table('accounts')->insert([
 
-
-
             [
                 'username'=>'admin01',
                 'password'=>'admin01',

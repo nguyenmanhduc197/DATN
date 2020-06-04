@@ -101,7 +101,7 @@ class AdminLoginController extends Controller
         $obj->phone = Input::get('phone');
         $obj->DOB = Input::get('DOB');
         $obj->role = 1;
-        $obj->status = 0;
+        $obj->status = 1;
         $obj->save();
         return redirect()->back()->with('message', 'Đăng ký thành công');
     }

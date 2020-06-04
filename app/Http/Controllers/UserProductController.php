@@ -155,12 +155,5 @@ class UserProductController
             ->with('obj_categoryNews',$obj_categoryNews);
     }
 
-   /* public function abc(){
-        $obj_category = Category::where('status', 1)->get();
-        $order = Order::all();
-        $order_details = OrderDetail::where('order_id', 1)->get();
-        return view('user.receipt')
-            ->with('order', $order)
-            ->with('order_details', $order_details);
-    }*/
+
 }

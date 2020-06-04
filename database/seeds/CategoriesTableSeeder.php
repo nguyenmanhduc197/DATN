@@ -24,19 +24,19 @@ class CategoriesTableSeeder extends Seeder
                'id'=>'2',
                'name' => 'Sữa tăng cân',
                'description' => 'Sữa tăng cân',
-               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584339436/1584339434.jpg',
+               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1589208094/seri6_hvq7ip.jpg',
            ],
            [
                'id'=>'3',
                'name' => 'Bcaa',
                'description' => 'Bcaa',
-               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/c_fit,h_225,w_225/1584337238.png',
+               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1589207371/61-plus-plm37eel-sl1000_efs9io.jpg',
            ],
            [
                'id'=>'4',
                'name' => 'Vitamin, khoáng',
                'description' => 'Vitamin, khoáng',
-               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/c_fit,h_225,w_225/1584337414.png',
+               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1589207449/platinum-100_-omega-fish-oil_master_etbgmd.jpg',
            ],
            [
                'id'=>'5',
@@ -48,7 +48,7 @@ class CategoriesTableSeeder extends Seeder
                'id'=>'6',
                'name' => 'Phụ kiện',
                'description' => 'Phụ kiện',
-               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/c_fit,h_225,w_225/1584338107.png',
+               'image' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1589207559/day-quan-co-tay-valeo_td7rpe.jpg',
            ],
         ]);
     }

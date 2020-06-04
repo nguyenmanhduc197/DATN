@@ -169,6 +169,12 @@
                                     <span class="sidebar-normal">Thêm tin mới</span>
                                 </a>
                             </li>
+                            <li class="nav-item @yield('active-list-comment')">
+                                <a class="nav-link" href="/admin/news/list_comment">
+                                    <span class="sidebar-mini">-</span>
+                                    <span class="sidebar-normal">Quản lí comment</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -338,7 +344,7 @@
     $(document).ready(function () {
         $('#dataTables-example').DataTable({
             responsive: true,
-            pageLength: 50
+            pageLength: 25
         });
     });
 </script>

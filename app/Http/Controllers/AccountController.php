@@ -20,7 +20,7 @@ class AccountController extends Controller
     {
         //
         if (Auth::check()) {
-            $obj = User::paginate(5);
+            $obj = User::paginate(10);
             return view('admin.account.list')->with('obj', $obj);
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
 
@@ -37,11 +37,7 @@ class AccountController extends Controller
 
 
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+/*
     public function create()
     {
         //
@@ -52,12 +48,7 @@ class AccountController extends Controller
 
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         if (Auth::check()) {
@@ -76,12 +67,7 @@ class AccountController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
         //
@@ -89,12 +75,6 @@ class AccountController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
 
     public function edit($id)
     {
@@ -103,7 +83,7 @@ class AccountController extends Controller
             return view('admin.account.edit')
                 -> with('obj',$obj);
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }
+    }*/
 
     public function lockCustomer()
     {
@@ -118,26 +98,15 @@ class AccountController extends Controller
         } else return response()->json(['success' => 0], 400);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+/*    public function update(Request $request, $id)
     {
         //
         if (Auth::check()) {
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }
+    }*/
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         //

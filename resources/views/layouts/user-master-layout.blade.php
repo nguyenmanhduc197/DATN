@@ -90,7 +90,7 @@
                                 <a href="/news">Tin tức thể hình</a>
                                 <ul class="sub_menu">
                                     @foreach($obj_categoryNews as $item)
-                                        <li><a href="#">{{$item -> name}}</a></li>
+                                        <li><a href="/news/categoryNews{{$item->id}}.html">{{$item -> name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
@@ -217,11 +217,28 @@
 
             <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
                 <h4 class="s-text12 p-b-30">
-                    Liên kết
+                    Tin tức thể hình
                 </h4>
 
                 <ul>
 
+                    @foreach($obj_categoryNews as $item)
+                        <li class="p-b-9">
+                            <a href="/news/categoryNews{{$item->id}}.html" class="s-text7">
+                                {{$item -> name}}
+                            </a>
+                        </li>
+                    @endforeach
+
+                </ul>
+            </div>
+
+            <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
+                <h4 class="s-text12 p-b-30">
+                    Trợ giúp
+                </h4>
+
+                <ul>
                     <li class="p-b-9">
                         <a href="/about" class="s-text7">
                             Giới thiệu
@@ -234,15 +251,6 @@
                         </a>
                     </li>
 
-                </ul>
-            </div>
-
-            <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-                <h4 class="s-text12 p-b-30">
-                    Trợ giúp
-                </h4>
-
-                <ul>
                     <li class="p-b-9">
                         <a href="/return" class="s-text7">
                             Chính sách đổi trả

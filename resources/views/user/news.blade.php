@@ -101,7 +101,7 @@
                     <div class="col-md-9">
                         @foreach($obj_categoryNews as $tl)
                             <div class="category_layout">
-                                <div class="item_caregory red"><h2><a href="#">{{$tl->name}}</a></h2></div>
+                                <div class="item_caregory red"><h2><a href="/news/categoryNews{{$tl->id}}.html">{{$tl->name}}</a></h2></div>
                                 <?php
                                 $data = $tl->news->where('hot', 1)->sortByDesc('created_at')->take(5);
                                 $news1 = $data->shift();
@@ -112,14 +112,14 @@
                                         <div class="item feature_news_item">
                                             <div class="item_wrapper">
                                                 <div class="item_img">
-                                                    <a href="news/{{$news1['id']}}.html"><img class="img-responsive"
+                                                    <a href="/news/{{$news1['id']}}.html"><img class="img-responsive"
                                                                                               style="width: 500px ;height: 400px"
                                                                                               src="{{$news1['images']}}"
                                                                                               alt="Chania"></a>
                                                 </div><!--item_img-->
                                                 <div class="item_title_date">
                                                     <div class="news_item_title">
-                                                        <h1><a href="news/{{$news1['id']}}.html"
+                                                        <h1><a href="/news/{{$news1['id']}}.html"
                                                                style="font-weight: bold">{{$news1['title']}}</a></h1>
                                                     </div><!--news_item_title-->
                                                     <div class="item_meta">{{$news1['created_at']}} by: <a href="#">admin</a>
@@ -137,13 +137,13 @@
                                             @foreach($data->all() as $others)
                                                 <div class="media">
                                                     <div class="media-left">
-                                                        <a href="news/{{$others['id']}}.html"><img class="media-object"
+                                                        <a href="/news/{{$others['id']}}.html"><img class="media-object"
                                                                                                    style="width:100px; height: 70px "
                                                                                                    src="{{$others['images']}}"
                                                                                                    alt="Generic placeholder image"></a>
                                                     </div><!--media-left-->
                                                     <div class="media-body">
-                                                        <h3 class="media-heading"><a href="news/{{$others['id']}}.html">{{$others['title']}}
+                                                        <h3 class="media-heading"><a href="/news/{{$others['id']}}.html">{{$others['title']}}
                                                             </a></h3>
                                                     </div><!--media-body-->
                                                 </div><!--media-->
@@ -171,7 +171,7 @@
                                                     <div class="news_item_title">
                                                         <h3><a href="#">Track Roboto the Real Tracker.</a></h3>
                                                     </div><!--news_item_title-->
-                                                    <div class="item_meta"><a href="#">20Aug- 2015,</a> by:<a href="#">Jhonson</a>
+                                                    <div class="item_meta"><a href="#">20Aug- 2020,</a> by:<a href="#">Admin</a>
                                                     </div>
                                                 </div><!--item_title_date-->
                                             </div><!--item_wrapper-->
@@ -195,7 +195,7 @@
                                                     <div class="news_item_title">
                                                         <h3><a href="#">Track Roboto the Real Tracker.</a></h3>
                                                     </div><!--news_item_title-->
-                                                    <div class="item_meta"><a href="#">20Aug- 2015,</a> by:<a href="#">Jhonson</a>
+                                                    <div class="item_meta"><a href="#">20Aug- 2020,</a> by:<a href="#">Admin</a>
                                                     </div>
                                                 </div><!--item_title_date-->
                                             </div><!--item_wrapper-->
@@ -219,7 +219,7 @@
                                                     <div class="news_item_title">
                                                         <h3><a href="#">Track Roboto the Real Tracker.</a></h3>
                                                     </div><!--news_item_title-->
-                                                    <div class="item_meta"><a href="#">20Aug- 2015,</a> by:<a href="#">Jhonson</a>
+                                                    <div class="item_meta"><a href="#">20Aug- 2020,</a> by:<a href="#">Admin</a>
                                                     </div>
                                                 </div><!--item_title_date-->
                                             </div><!--item_wrapper-->
@@ -241,14 +241,14 @@
                                 <h2 style="padding: 20px 15px 0px 20px">Popular</h2>
                             </div>
                             <div class="tab-content">
-                                @foreach($most_views as $news)
+                                @foreach($popular as $news)
                                     <div class="tab-pane active" id="1">
                                         <div class="media">
                                             <div class="media-left">
-                                                <a href="news/{{$news->id}}.html"><img class="media-object" width="120px" height="80px" src="{{$news->images}}" alt="Generic placeholder image"></a>
+                                                <a href="/news/{{$news->id}}.html"><img class="media-object" width="120px" height="80px" src="{{$news->images}}" alt="Generic placeholder image"></a>
                                             </div><!--media-left-->
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="news/{{$news->id}}.html" style="font-size: 13px; font-weight: bold ">{{$news->title}}</a></h3>
+                                                <h3 class="media-heading"><a href="/news/{{$news->id}}.html" style="font-size: 13px; font-weight: bold ">{{$news->title}}</a></h3>
                                                 <span class="rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -265,7 +265,7 @@
                         </div><!--tab-->
 
                         <div class="ad">
-                            <img class="img-responsive" src="{{asset('newstheme/img/img-ad.jpg')}}" alt="img" />
+                            <a href="http://localhost:8000/product"><img style="width: 255px; height: 269px" class="img-responsive" src="{{asset('img/news/ad1.jpg')}}" alt="img" /></a>
                         </div>
 
                         <div class="ad">
@@ -276,54 +276,29 @@
                             <div class="sidebar_title">
                                 <h2>Most Commented</h2>
                             </div>
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="assets/img/img-list.jpg" alt="Generic placeholder image"></a>
-                                </div><!--media-left-->
-                                <div class="media-body">
-                                    <h3 class="media-heading"><a href="#">Spain going to made class football</a></h3>
-                                    <div class="comment_box">
-                                        <div class="comments_icon"> <i class="fa fa-comments" aria-hidden="true"></i></div>
-                                        <div class="comments"><a href="#">9 Comments</a></div>
-                                    </div><!--comment_box-->
-                                </div><!--media-body-->
-                            </div><!--media-->
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="assets/img/img-list2.jpg" alt="Generic placeholder image"></a>
-                                </div><!--media-left-->
-                                <div class="media-body">
-                                    <h3 class="media-heading"><a href="#">Spain going to made class football</a></h3>
-                                    <div class="comment_box">
-                                        <div class="comments_icon"> <i class="fa fa-comments" aria-hidden="true"></i></div>
-                                        <div class="comments"><a href="#">20 Comments</a></div>
-                                    </div><!--comment_box-->
-                                </div><!--media-body-->
-                            </div><!--media-->
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="assets/img/img-list3.jpg" alt="Generic placeholder image"></a>
-                                </div><!--media-left-->
-                                <div class="media-body">
-                                    <h3 class="media-heading"><a href="#">Spain going to made class football</a></h3>
-                                    <div class="comment_box">
-                                        <div class="comments_icon"> <i class="fa fa-comments" aria-hidden="true"></i></div>
-                                        <div class="comments"><a href="#">23 Comments</a></div>
-                                    </div><!--comment_box-->
-                                </div><!--media-body-->
-                            </div><!--media-->
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="assets/img/img-list3.jpg" alt="Generic placeholder image"></a>
-                                </div><!--media-left-->
-                                <div class="media-body">
-                                    <h3 class="media-heading"><a href="#">Spain going to made class football</a></h3>
-                                    <div class="comment_box">
-                                        <div class="comments_icon"> <i class="fa fa-comments" aria-hidden="true"></i></div>
-                                        <div class="comments"><a href="#">44 Comments</a></div>
-                                    </div><!--comment_box-->
-                                </div><!--media-body-->
-                            </div><!--media-->
+                            <?php
+                            $most_comment_news = DB::select(
+                                "SELECT n.id, n.title, n.images, COUNT(c.id) AS cc FROM `news` AS n
+                                LEFT JOIN `comments` AS c
+                                ON c.id_news = n.id
+                                GROUP BY n.id, n.title, n.images
+                                ORDER BY cc DESC
+                                LIMIT 0,3");
+                            ?>
+                            @foreach($most_comment_news as $n)
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="/news/{{$n->id}}.html"><img class="media-object" src="{{$n->images}}" width="100px" height="80px"></a>
+                                    </div><!--media-left-->
+                                    <div class="media-body">
+                                        <h3 class="media-heading"><a href="/news/{{$n->id}}.html">{{$n->title}}</a></h3>
+                                        <div class="comment_box">
+                                            <div class="comments_icon"> <i class="fa fa-comments" aria-hidden="true"></i></div>
+                                            <div class="comments"><a href="#">{{$n->cc}} Comments</a></div>
+                                        </div><!--comment_box-->
+                                    </div><!--media-body-->
+                                </div><!--media-->
+                            @endforeach
                         </div><!--most_comment-->
                     </div>
                 </div>
@@ -345,7 +320,7 @@
                                     <div class="video_info">
                                         <div class="video_item_title"><h3><a href="#">Track & Fiels famous still in the
                                                     craze of Runner world</a></h3></div><!--video_item_title-->
-                                        <div class="item_meta"><a href="#">20Aug- 2015</a></div><!--item_meta-->
+                                        <div class="item_meta"><a href="#">20Aug- 2020</a></div><!--item_meta-->
                                     </div><!--video_info-->
                                 </div>
                                 <div class="item">
@@ -354,7 +329,7 @@
                                     <div class="video_info">
                                         <div class="video_item_title"><h3><a href="#">Track & Fiels famous still in the
                                                     craze of Runner world</a></h3></div><!--video_item_title-->
-                                        <div class="item_meta"><a href="#">20Aug- 2015</a></div><!--item_meta-->
+                                        <div class="item_meta"><a href="#">20Aug- 2020</a></div><!--item_meta-->
                                     </div><!--video_info-->
                                 </div>
                                 <div class="item">
@@ -363,7 +338,7 @@
                                     <div class="video_info">
                                         <div class="video_item_title"><h3><a href="#">Track & Fiels famous still in the
                                                     craze of Runner world</a></h3></div><!--video_item_title-->
-                                        <div class="item_meta"><a href="#">20Aug- 2015</a></div><!--item_meta-->
+                                        <div class="item_meta"><a href="#">20Aug- 2020</a></div><!--item_meta-->
                                     </div><!--video_info-->
                                 </div>
                                 <div class="item">
