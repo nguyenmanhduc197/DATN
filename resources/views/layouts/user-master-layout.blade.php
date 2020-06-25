@@ -102,6 +102,55 @@
                             <li>
                                 <a href="/contact">Liên hệ</a>
                             </li>
+                            <li>
+                                <div class="brm">
+                                    <button class="btn-shop" style="font-size: 15px" data-toggle="modal" data-target="#exampleModal">Tính BMR & TDEE</button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content bg-aqua">
+                                                <div class="modal-body">
+                                                    <ul>
+                                                        <div class="contender">
+                                                            <div class="basicInfor">
+                                                                <div class="inputBox gederBox"><h3>Giới tính</h3>
+                                                                    <select name="gender" id="gender">
+                                                                        <option value="male">Male</option>
+                                                                        <option value="female">Female</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputBox bodyBox">
+                                                                    <div class="input"><label>Chiều cao</label> <div><input id="height" type="text" placeholder="cm"></div></div>
+                                                                    <div class="input"><label>Cân nặng</label> <div><input id="weight" type="text" placeholder="kg"></div></div>
+                                                                    <div class="input"><label>Độ tuổi</label> <div><input id="age" type="text" placeholder="20"></div></div>
+                                                                </div>
+                                                                <div class="inputBox paraBox"><h3>Cường độ vận động</h3>
+                                                                    <select name="days" id="days">
+                                                                        <option value="1.2">Ít vận động</option>
+                                                                        <option value="1.375">Nhẹ: 1-3 buổi / 1 tuần</option>
+                                                                        <option value="1.55">Trung bình: 3-5 buổi / 1 tuần</option>
+                                                                        <option value="1.725">Cao: 6-7 buổi / 1 tuần</option>
+                                                                        <option value="1.9">Cực cao: 7 buổi / 1 tuần với cường độ rất cao</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="calcBtn">
+                                                                    <button type="button" id="calcBtn">Calculator</button>
+                                                                </div>
+                                                                <div><span id="brm-result"></span></div>
+                                                                <div><span id="tdee-result"></span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary reset-btn">Reset</button>
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -414,6 +463,37 @@
 </script>
 
 <script>
+    $('.reset-btn').on('click', function () {
+        $("select[name='gender']").val("male");
+        $('#height').val("");
+        $('#weight').val("");
+        $('#age').val("");
+        $("select[name='days']").val("1.2");
+    });
+    $('#calcBtn').on('click', function () {
+        var gender = $("select[name='gender']").val();
+        var height = parseInt($('#height').val());
+        var weight = parseInt($('#weight').val());
+        var age = parseInt($('#age').val());
+        var days = parseFloat($("select[name='days']").val());
+        var bmr;
+        if (gender === 'male') {
+            bmr = (13.397 * weight) + (4.799 * height) - (5.677 * age) + 88.362;
+        } else {
+            bmr = (9.247  * weight) + (3.098 * height) - (4.330 * age) + 447.593;
+        }
+        var tdee = bmr * days;
+        $('#brm-result').text("BMR (Basal Metabolic Rate) = " + bmr  );
+        $('#tdee-result').text("TDEE (Total Daily Energy Expenditure) = " + tdee);
+    })
+</script>
+<script>
+    $('.modal').on('hidden.bs.modal', function(){
+        $(this).find('form')[0].reset();
+    });
+</script>
+
+<script>
     $('input[name = "name"]').keypress(function (e) {
         if (e.which == 13) {
             $('form[name = "search-form"]').submit();
@@ -426,7 +506,6 @@
 <script src="{{asset('/js/product.js')}}"></script>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script src="{{asset('js/my_script.js')}}"></script>
-
 
 
 </body>

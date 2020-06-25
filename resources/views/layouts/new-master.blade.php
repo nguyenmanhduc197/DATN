@@ -29,7 +29,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="orange">
+    <div class="sidebar" data-color="blue">
 
         <div class="sidebar-wrapper">
             <div class="logo">
