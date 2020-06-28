@@ -63,38 +63,6 @@ class BrandController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function show($id)
-    {
-        if (Auth::check()) {
-            $obj = Brand::find($id);
-            return view('admin.brand.show')
-                -> with('obj',$obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-
-
-    }*/
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-   /* public function edit($id)
-    {
-        if (Auth::check()) {
-            $obj = Brand::find($id);
-            return view('admin.brand.edit')
-                -> with('obj',$obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
-
     public function quickEdit($id)
     {
         if(Auth::check()){
@@ -106,30 +74,6 @@ class BrandController extends Controller
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function update(Request $request, $id)
-    {
-        if (Auth::check()) {
-            $obj = Brand::find($id);
-            $obj -> name = Input::get('name');
-            $obj -> description = Input::get('description');
-            $obj -> country = Input::get('country');
-            if (Input::hasFile('images')) {
-                $image_id = time();
-                Cloudder::upload(Input::file('images')->getRealPath(), $image_id);
-                $obj->logo = Cloudder::secureShow($image_id);
-            }
-            $obj -> save();
-            echo "<script>alert('Saved Successfull'); window.location.href = '/admin/brand'</script>";
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickUpdate (Request $request){
         if (Auth::check()) {

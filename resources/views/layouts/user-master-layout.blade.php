@@ -319,7 +319,7 @@
                     Nhận tin tức mới nhất
                 </h4>
 
-                <form>
+                <form method="GET" action="{{url('/add-subcriber')}}">
                     <div class="effect1 w-size9">
                         <input class="s-text7 bg6 w-full p-b-5" type="text" name="email"
                                placeholder="email@example.com">

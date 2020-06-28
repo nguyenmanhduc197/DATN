@@ -93,51 +93,7 @@ class ProductController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function show($id)
-    {
-        if(Auth::check()){
-            $obj = Product::find($id);
-            if($obj==null) {
-                return view('404');
-            }
-            return view('admin.product.show')
-                -> with('obj',$obj);
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
 
-
-    }*/
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-/*    public function edit($id)
-    {
-        if(Auth::check()){
-            $obj = Product::find($id);
-            if($obj==null) {
-                return view('404');
-            }
-            $obj_category = Category::all();
-            $obj_brand = Brand::all();
-            if($obj==null) {
-                return view('404');
-            }
-            return view('admin.product.edit')
-                -> with('obj',$obj)->with('obj_brand',$obj_brand)->with('obj_category',$obj_category);
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-
-    }*/
 
     public function quickEdit($id){
         if(Auth::check()){
@@ -157,13 +113,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
- /*   public function update(Request $request, $id)
-    {
-        if(Auth::check()){
 
-        }
-        else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickUpdate (Request $request){
         if(Auth::check()){

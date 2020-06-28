@@ -51,41 +51,6 @@ class CategoryNewsController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-   /* public function show($id)
-    {
-        if (Auth::check()) {
-            $obj = CategoryNews::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            return view('admin.category_news.show')
-                ->with('obj', $obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function edit($id)
-    {
-        if (Auth::check()) {
-            $obj = CategoryNews::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            return view('admin.category_news.edit')
-                ->with('obj', $obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickEdit($id)
     {
@@ -98,25 +63,6 @@ class CategoryNewsController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function update(Request $request, $id)
-    {
-        if (Auth::check()) {
-            $obj = CategoryNews::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            $obj->name = Input::get('name');
-            $obj->save();
-            echo "<script>alert('Saved Successful'); window.location.href = '/admin/categoryNews'</script>";
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickUpdate(Request $request)
     {
@@ -132,12 +78,7 @@ class CategoryNewsController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         if (Auth::check()) {

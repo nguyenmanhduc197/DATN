@@ -8,19 +8,8 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Response;
 
-class EmailController extends Controller
+class EmailController
 {
-    //
-//    public function send(Request $request)
-//    {
-//        $data = array('title' => 'Xin chao vietnam', 'content' => 'Day la noi dung');
-//        Mail::send('admin.email.send_reicept', $data, function ($message) {
-//            $message->to('nguyenmanhduc197@gmail.com', 'ngmanhduc')
-//                ->subject('Laravel HTML Testing Mail');
-//            $message->from('gymerstore@gmail.com', 'Gymer Store');
-//        });
-//        return 'okie';
-//    }
 
     public function send2(Request $request)
     {
@@ -34,4 +23,13 @@ class EmailController extends Controller
         });
         return response()->json(['msg', 'DONE'], 200);
     }
+
+    public function addSubcriber()
+    {
+        $obj = new Subscribed();
+        $obj->email = Input::get('email');
+        $obj->save();
+        return redirect('/');
+    }
+
 }

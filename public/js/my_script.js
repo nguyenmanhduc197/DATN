@@ -98,7 +98,7 @@ function updateCart(){
                 var itemClass = 'item-' + new_items[i].product.id;
                 $('.num-product.' + itemClass).val(new_items[i].quantity);
                 $('.' + itemClass).text(numeral(new_items[i].quantity * new_items[i].product.dicountPrice).format('0,0') + ' VNĐ');
-                $('h4').text(new_total_money);
+
             }
             $('.total_price').text(new_total_money);
         },

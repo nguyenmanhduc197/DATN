@@ -82,13 +82,12 @@ Route::get('/contact','HomepageController@showContact');
 Route::get('/product','UserProductController@index');
 Route::post('/product','UserProductController@search');
 Route::get('/product/{product}','UserProductController@show');
-/*Route::get('/abc', function (){
-    return view('user.product-detail') ;
-});*/
+
 Route::get('/news','UserNewsController@index');
 Route::get('/news/{id}.html','UserNewsController@newsDetail')->where('id', '[0-9]+');
 Route::post('/news/{id}.html','UserNewsController@postComment')->where('id', '[0-9]+');
 Route::get('/news/categoryNews{id}.html','UserNewsController@newsCategory');
+Route::get('/add-subcriber','EmailController@addSubcriber');
 
 Route::post('/san-pham-test','UserProductController@search');
 Route::post('/add-to-cart','ShoppingCartController@addToCart');
@@ -96,7 +95,7 @@ Route::get('/view-cart','ShoppingCartController@showCart');
 Route::get('/destroy-cart', 'ShoppingCartController@destroyCart');
 Route::put('/update-cart', 'ShoppingCartController@updateCart');
 Route::post('/checkout', 'ShoppingCartController@checkoutCart');
-/*Route::get('/abc','UserProductController@abc');*/
+
 Route::post('/remove-item', 'ShoppingCartController@removeItem');
 Route::get('/checkout', 'ShoppingCartController@checkout');
 Route::get('/payment', 'ShoppingCartController@payment');

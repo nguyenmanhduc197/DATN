@@ -58,41 +58,6 @@ class CategoryController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-   /* public function show($id)
-    {
-        if (Auth::check()) {
-            $obj = Category::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            return view('admin.category.show')
-                ->with('obj', $obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function edit($id)
-    {
-        if (Auth::check()) {
-            $obj = Category::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            return view('admin.category.edit')
-                ->with('obj', $obj);
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickEdit($id)
     {
@@ -105,31 +70,6 @@ class CategoryController extends Controller
         } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    /*public function update(Request $request, $id)
-    {
-        if (Auth::check()) {
-            $obj = Category::find($id);
-            if ($obj == null) {
-                return view('404');
-            }
-            $obj->name = Input::get('name');
-            $obj->description = Input::get('description');
-            if (Input::hasFile('image')) {
-                $image_id = time();
-                Cloudder::upload(Input::file('image')->getRealPath(), $image_id);
-                $obj->image = Cloudder::secureShow($image_id);
-            }
-            $obj->save();
-            echo "<script>alert('Saved Successful'); window.location.href = '/admin/category'</script>";
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
-    }*/
 
     public function quickUpdate(Request $request)
     {

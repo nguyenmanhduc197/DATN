@@ -16,10 +16,10 @@ class CreateSubscribedsTable extends Migration
         Schema::create('subscribeds', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email');
-            $table->string('name');
-            $table->string('address');
-            $table->string('phone');
-            $table->integer('status')->default(0); // 1: dong y nhan mail 0: khong dong y nhan mail
+            $table->string('name')->nullable();
+            $table->string('address')->nullable();
+            $table->string('phone')->nullable();
+            $table->integer('status')->default(1); // 1: dong y nhan mail 0: khong dong y nhan mail
             $table->timestamps();
         });
     }
